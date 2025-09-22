@@ -1,2 +1,0 @@
-F:\Data Defenders\AngularTest\SLN\obj\Debug\AngularTest.esproj.CoreCompileInputs.cache
-F:\Data Defenders\AngularTest\obj\Debug\AngularTest.esproj.CoreCompileInputs.cache
