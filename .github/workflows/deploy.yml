@@ -30,4 +30,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages   # Deploy to the gh-pages branch
-          folder: dist/Resume2025  # Change this to match the outputPath
+          folder: dist/ultimania/browser  # Change this to match the outputPath
