@@ -1,0 +1,9 @@
+<div #container class="tp-container">
+  <h1 #title
+      [style.fontSize.px]="fontSize"
+      [style.lineHeight]="lineHeight"
+      [style.transform]="'scale(1,' + scaleY + ')'"
+      style="text-align: center; margin: 0; user-select: none;">
+    <span *ngFor="let char of chars">{{ char }}</span>
+  </h1>
+</div>
