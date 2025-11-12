@@ -1,4 +1,7 @@
-body {
+body,
+body::after,
+body::before,
+.nav-menu {
   background-color: #191923;
   color: white;
 }
@@ -8,7 +11,11 @@ body {
   background-color: #20202A;
 }
 
-.profile-card, .side-button, .nav-menu {
+.r-card {
+  background-color: #2B2B36;
+}
+
+.profile-card, .side-button {
   background-color: #24242F;
 }
 

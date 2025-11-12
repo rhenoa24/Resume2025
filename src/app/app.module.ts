@@ -10,6 +10,7 @@ import { MusicPlayerComponent } from './music-player/music-player.component';
 import { BannerComponent } from './banner/banner.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { SkillBarComponent } from './profile/skill-bar/skill-bar.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SkillBarComponent } from './profile/skill-bar/skill-bar.component';
     MusicPlayerComponent,
     BannerComponent,
     NavMenuComponent,
-    SkillBarComponent
+    SkillBarComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
