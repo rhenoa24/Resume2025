@@ -19,3 +19,7 @@ body {
 .highlight-color {
   background-color: #FF8F99
 }
+
+.banner .background-image {
+  background-image: url('../../../public/images/banner-photo.jpg');
+}

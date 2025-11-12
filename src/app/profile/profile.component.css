@@ -6,11 +6,11 @@
 }
 
 
-  .profile-card, .info-card {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-  }
+.profile-card, .info-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
 .profile-card {
   gap: 15px;
@@ -31,8 +31,10 @@
   width: 90px;
   height: 90px;
   border-radius: 100%;
-  background-color: white;
   position: relative;
+  /**/
+  background-image: url('../../../public/images/1x1.jpg');
+  background-size: contain;
 }
 
 .status {
@@ -53,9 +55,8 @@
 .download {
   display: flex;
   align-items: center;
-  
 }
 
-.download i {
-  font-size: 17px;
-}
+  .download i {
+    font-size: 17px;
+  }
