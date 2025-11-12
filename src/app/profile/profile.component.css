@@ -1,0 +1,9 @@
+.profile-container {
+  width: 290px;
+  height: 100%;
+}
+
+.profile-card, .info-card {
+  padding: 30px;
+}
+
