@@ -11,6 +11,7 @@ html, body {
 body {
   margin: 0;
   font-family: "Inter Tight", sans-serif;
+  font-size: 10pt;
 }
 
 .material-symbols-rounded {
