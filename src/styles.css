@@ -46,3 +46,17 @@ body {
   border: 0;
   cursor: pointer;
 }
+
+.split {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.faded {
+    opacity: 0.4;
+}
