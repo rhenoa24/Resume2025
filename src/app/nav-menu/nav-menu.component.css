@@ -1,0 +1,10 @@
+.nav-menu {
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+    font-weight: 700;
+}
+
+.nav-menu a:not(.active){
+    opacity: 0.3
+}
