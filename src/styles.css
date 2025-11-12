@@ -39,3 +39,9 @@ body {
   overflow: auto;
   width: 1070px;
 }
+
+.r-button {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+}

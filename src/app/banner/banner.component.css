@@ -1,0 +1,44 @@
+.banner {
+  width: 100%;
+  height: 408px;
+  display: flex;
+  position: relative;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.title {
+  font-size: 70pt;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 20pt;
+}
+
+.fade-gradient {
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: #000000;
+  position: absolute;
+  z-index: -2;
+}
+
+.fade-gradient {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(0deg, #2C2C2C, #5b5b5b00);
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: luminosity;
+}

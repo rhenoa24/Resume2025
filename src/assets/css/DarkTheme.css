@@ -11,3 +11,7 @@ body {
 .profile-card, .side-button {
   background-color: #24242F;
 }
+
+.highlight {
+  color: #FF8F99
+}
