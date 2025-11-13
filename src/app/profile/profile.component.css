@@ -4,6 +4,7 @@
   overflow: auto;
   scrollbar-width: none;
   position: fixed;
+  z-index: 1;
 }
 
 
