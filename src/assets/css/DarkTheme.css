@@ -4,7 +4,7 @@ body, body::after, body::before,
   color: white;
 }
 
-.nav-menu, .content {
+.page-container {
   background-color: #1e1e28
 }
 

@@ -3,6 +3,7 @@
   height: 408px;
   display: flex;
   position: relative;
+  z-index: 1;
 }
 
 .text-group {
