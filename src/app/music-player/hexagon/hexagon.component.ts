@@ -8,5 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class HexagonComponent {
   @Input() itemImg: string = ""
-
+  @Input() rotate: boolean = false
+  @Input() hovered = false
+  @Input() isDimmed = false
 }

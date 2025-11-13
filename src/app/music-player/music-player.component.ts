@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 interface Track {
   title: string;
+  img: string;
   file: string;
 }
 
@@ -19,15 +20,15 @@ export class MusicPlayerComponent {
   private readonly animationDuration = 500; // in ms, matches your 0.4s animation
 
   tracks: Track[] = [
-    { title: 'just friends', file: '/music-player/just-friends.ogg' },
-    { title: 'bossa uh', file: '/music-player/bossa-uh.ogg' },
+    { title: 'just friends', img: 'just-friends.png', file: '/music-player/just-friends.ogg' },
+    { title: 'bossa uh', img: 'bossa-uh.png', file: '/music-player/bossa-uh.ogg' },
   ];
 
   currentTrackIndex = 0;
   audio = new Audio();
   volume = 0.2; // default
   progress = 0; // 0 to 100
-
+  hovering = false;
 
   constructor() {
     this.loadTrack(this.currentTrackIndex)
@@ -37,6 +38,11 @@ export class MusicPlayerComponent {
       if (this.audio.duration) {
         this.progress = (this.audio.currentTime / this.audio.duration) * 100;
       }
+    });
+
+    // When the song ends, play the next one
+    this.audio.addEventListener('ended', () => {
+      this.next();
     });
   }
 
@@ -62,20 +68,25 @@ export class MusicPlayerComponent {
     this.audio.load()
   }
 
+  playToggle() {
+    if (this.isPlaying === false) {
+      this.audio.play()
+      this.isPlaying = true
+    } else {
+      this.audio.pause()
+      this.isPlaying = false
+    }
+  }
+
   play() {
     this.audio.play()
     this.isPlaying = true
   }
 
-  pause() {
-    this.audio.pause()
-    this.isPlaying = false
-  }
-
   next() {
-    this.currentTrackIndex = (this.currentTrackIndex + 1) % this.tracks.length
-    this.loadTrack(this.currentTrackIndex)
-    this.play()
+    this.currentTrackIndex = (this.currentTrackIndex + 1) % this.tracks.length;
+    this.loadTrack(this.currentTrackIndex);
+    this.play();
   }
 
   previous() {

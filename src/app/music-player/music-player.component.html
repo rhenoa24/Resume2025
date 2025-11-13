@@ -7,30 +7,62 @@
 
   <div class="music-player-UI">
 
-    <!--<div>
-      <app-hexagon itemImg="UTS.png"></app-hexagon>
-    </div>-->
-
-    <div class="control-buttons">
-      <h3>{{ tracks[currentTrackIndex].title }}</h3>
-
-      <div class="seeker-container">
-        <input type="range"
-               min="0"
-               max="100"
-               [value]="progress"
-               (input)="seek($event)" />
-        <span>{{ formatTime(audio.currentTime) }} / {{ formatTime(audio.duration) }}</span>
+    <div class="volume-set">
+      <div class="volume-icons">
+        @if (volume === 1) {
+        <i class="material-symbols-rounded">volume_up</i>
+        } @else if (volume === 0) {
+        <i class="material-symbols-rounded">volume_mute</i>
+        } @else {
+        <i class="material-symbols-rounded">volume_down</i>
+        }
       </div>
-      <br />
-      <div class="controls">
-        <button (click)="previous()">⏮️</button>
-        <button (click)="play()">▶️</button>
-        <button (click)="pause()">⏸️</button>
-        <button (click)="next()">⏭️</button>
-      </div>
-      <input type="range" min="0" max="100" [value]="volume * 100" (input)="setVolume($event)" />
 
+      <input class="volume-slider" type="range" min="0" max="100" [value]="volume * 100" (input)="setVolume($event)" />
+    </div>
+
+    <div class="music-nav">
+      <div class="left">
+        <button (click)="next()" class="r-button"><i class="material-symbols-rounded">skip_previous</i></button>
+        <app-hexagon [itemImg]="tracks[currentTrackIndex].img" [isDimmed]="true"></app-hexagon>
+      </div>
+
+      <div class="center"
+           (mouseenter)="hovering = true"
+           (mouseleave)="hovering = false">
+        <div class="seeker-box">
+          <div class="seeker-container">
+            <input type="range"
+                   min="0"
+                   max="100"
+                   [value]="progress"
+                   (input)="seek($event)" />
+            <div class="split">
+              <span>{{ formatTime(audio.currentTime) }}</span>
+              <span>{{ formatTime(audio.duration) }}</span>
+            </div>
+          </div>
+        </div>
+
+        <app-hexagon [itemImg]="tracks[currentTrackIndex].img" [hovered]="hovering"></app-hexagon>
+      </div>
+
+      <div class="right">
+        <button (click)="next()" class="r-button"><i class="material-symbols-rounded">skip_next</i></button>
+        <app-hexagon [itemImg]="tracks[currentTrackIndex].img" [isDimmed]="true"></app-hexagon>
+      </div>
+    </div>
+
+    <div class="track-play" (click)="playToggle()">
+      <div>
+        <button *ngIf="!isPlaying" class="r-button"><i class="material-symbols-rounded">play_arrow</i></button>
+        <button *ngIf="isPlaying" class="r-button"><i class="material-symbols-rounded">pause</i></button>
+      </div>
+
+      <div class="info">
+        <span class="song">{{ tracks[currentTrackIndex].title }}</span>
+        <i class="faded">Potsu</i>
+      </div>
     </div>
 
   </div>

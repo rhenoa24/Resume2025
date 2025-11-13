@@ -1,8 +1,34 @@
 .item-img {
-  width: 200px;
   height: 200px;
+  aspect-ratio: 616.49 / 533.89;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  clip-path: polygon( 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50% );
+  overflow: hidden;
+  clip-path: polygon( 25% 0%, /* top-left */
+  75% 0%, /* top-right */
+  100% 50%, /* right-middle */
+  75% 100%, /* bottom-right */
+  25% 100%, /* bottom-left */
+  0% 50% /* left-middle */
+  );
 }
+
+  .item-img::after {
+    content: '';
+    opacity: 0;
+    width: 110%;
+    height: 110%;
+    inset: 0;
+    background: linear-gradient(0deg, #20202a, #5b5b5b00);
+    position: absolute;
+    z-index: -1;
+    /*mix-blend-mode: luminosity;*/
+    transition: 0.4s ease-in-out;
+  }
+
+
+  .item-img.hovered::after,
+  .item-img.dimmed::after {
+    opacity: 1 !important;
+  }
