@@ -13,11 +13,11 @@ body, body::after, body::before,
   background-color: #20202A;
 }
 
-.r-card {
+.r-card, .song-list-UI .song-item.active .song-info {
   background-color: #2B2B36;
 }
 
-.profile-card, .side-button {
+.profile-card, .side-button, .song-list-UI {
   background-color: #24242F;
 }
 

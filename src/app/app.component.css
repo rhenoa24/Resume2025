@@ -19,9 +19,7 @@
 }
 
 .page-container {
-  /*overflow: auto;*/
   position: relative;
-  width: 1070px;
   padding-left: 290px;
   /*padding-right: 80px;*/
 }

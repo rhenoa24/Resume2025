@@ -21,15 +21,15 @@ export class MusicPlayerComponent {
   private readonly animationDuration = 500; // in ms, matches your 0.4s animation
 
   tracks: Track[] = [
-    { title: 'just friends', img: 'just-friends.png', file: 'music-player/just-friends.ogg', artist: 'potsu' },
-    { title: 'bossa uh', img: 'bossa-uh.png', file: 'music-player/bossa-uh.ogg', artist: 'potsu' },
-    { title: 'in the pool', img: 'in-the-pool.png', file: 'music-player/in-the-pool.ogg', artist: 'kensuke ushio' },
-    { title: 'Eternally Yours.', img: 'eternally-yours.png', file: 'music-player/eternally-yours.ogg', artist: 'YukiV4554' },
-    { title: 'your smile is my smile', img: 'your-smile-is-my-smile.png', file: 'music-player/your-smile-is-my-smile.ogg', artist: 'YukiV4554' },
+    { title: 'just friends'                                           , img: 'just-friends.png'                    , file: 'music-player/just-friends.ogg'                    , artist: 'potsu' },
+    { title: 'bossa uh'                                               , img: 'bossa-uh.png'                        , file: 'music-player/bossa-uh.ogg'                        , artist: 'potsu' },
+    { title: 'in the pool'                                            , img: 'in-the-pool.png'                     , file: 'music-player/in-the-pool.ogg'                     , artist: 'kensuke ushio' },
+    { title: 'Eternally Yours.'                                       , img: 'eternally-yours.png'                 , file: 'music-player/eternally-yours.ogg'                 , artist: 'YukiV4554' },
+    { title: 'your smile is my smile'                                 , img: 'your-smile-is-my-smile.png'          , file: 'music-player/your-smile-is-my-smile.ogg'          , artist: 'YukiV4554' },
     { title: 'You showed me what happiness was and I held it forever.', img: 'You-showed-me-what-happiness-was.png', file: 'music-player/You-showed-me-what-happiness-was.ogg', artist: 'YukiV4554' },
-    { title: 'A nameless flower lies in peace.', img: 'A-nameless-flower-lies-in-peace.png', file: 'music-player/A-nameless-flower-lies-in-peace.ogg', artist: 'YukiV4554' },
-    { title: `I'm happy that you're alive, thank you`, img: 'Im-happy-that-youre-alive.png', file: 'music-player/Im-happy-that-youre-alive.ogg', artist: 'YukiV4554' },
-    { title: 'Every time you smile.', img: 'Every-time-you-smile.png', file: 'music-player/Every-time-you-smile.ogg', artist: 'YukiV4554' },
+    { title: 'A nameless flower lies in peace.'                       , img: 'A-nameless-flower-lies-in-peace.png' , file: 'music-player/A-nameless-flower-lies-in-peace.ogg' , artist: 'YukiV4554' },
+    { title: `I'm happy that you're alive, thank you`                 , img: 'Im-happy-that-youre-alive.png'       , file: 'music-player/Im-happy-that-youre-alive.ogg'       , artist: 'YukiV4554' },
+    { title: 'Every time you smile.'                                  , img: 'Every-time-you-smile.png'            , file: 'music-player/Every-time-you-smile.ogg'            , artist: 'YukiV4554' },
   ];
 
   get currentTrack(): Track {
@@ -138,6 +138,12 @@ export class MusicPlayerComponent {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60).toString().padStart(2, '0');
     return `${minutes}:${seconds}`;
+  }
+
+  playTrack(index: number) {
+    this.currentTrackIndex = index;
+    this.loadTrack(this.currentTrackIndex);
+    this.play();
   }
 
 

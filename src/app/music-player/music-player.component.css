@@ -30,21 +30,22 @@
   transition: 0.4s ease-in-out;
 }
 
-.music-player-UI {
+.music-player-UI, .song-list-UI {
   opacity: 0;
   pointer-events: none;
   user-select: none;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
 }
 
 .track-play {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   width: calc(100% - 110px);
   left: 90px;
   top: -90px;
   position: relative;
+  cursor: pointer;
 }
 
 .volume-set {
@@ -150,6 +151,56 @@
     }
 
 /*===========================================*/
+.song-list-UI {
+  width: 100%;
+  /*background: red;*/
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-right: 0;
+  position: absolute;
+  top: 515px;
+  height: calc(100% - 515px);
+  overflow: auto;
+  scrollbar-width: none;
+  /**/
+  display: flex;
+  flex-direction: column;
+}
+
+  .song-list-UI .song-item {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+
+    .song-list-UI .song-item:nth-child(even) {
+      padding-left: 35px;
+    }
+
+    .song-list-UI .song-item .song-info {
+      padding: 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: -30px;
+      padding-left: 40px;
+      padding-right: 15px;
+      font-size: 9pt;
+    }
+
+      .song-list-UI .song-item .song-info .song-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+    .song-list-UI .song-item.active .song-info .song-title {
+      font-weight: bold;
+    }
+
+/*===========================================*/
 .sidebar.active {
   width: 300px;
   transform: translateX(-220px);
@@ -163,9 +214,9 @@
     opacity: 1;
   }
 
-  .sidebar.active .music-player-UI {
+  .sidebar.active .music-player-UI, .sidebar.active .song-list-UI {
     opacity: 1;
-    transition: opacity 0.4s ease-in-out 0.2s;
+    transition: opacity 0.4s ease-in-out 0.3s;
     pointer-events: all;
     user-select: initial;
   }

@@ -32,3 +32,15 @@
   .item-img.dimmed::after {
     opacity: 1 !important;
   }
+
+  .item-img.rotate {
+    height: 70px;
+    aspect-ratio: 533.89 / 616.49;
+    clip-path: polygon( 50% 0%, /* top-middle */
+    100% 25%, /* top-right */
+    100% 75%, /* bottom-right */
+    50% 100%, /* bottom-middle */
+    0% 75%, /* bottom-left */
+    0% 25% /* top-left */
+    );
+  }

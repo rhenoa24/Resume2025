@@ -69,4 +69,20 @@
 
   </div>
 
+  <div class="song-list-UI">
+    <div class="song-item"
+         *ngFor="let track of tracks; let i = index"
+         [class.active]="i === currentTrackIndex"
+         (click)="playTrack(i)">
+
+
+      <app-hexagon [itemImg]="track.img" [rotate]="true"></app-hexagon>
+
+      <div class="song-info">
+        <span class="song-title">{{ track.title }}</span>
+        <i class="song-artist faded">{{ track.artist }}</i>
+      </div>
+    </div>
+  </div>
+  <br />
 </div>
