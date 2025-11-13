@@ -32,10 +32,26 @@
 
 .music-player-UI {
   opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.seeker-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: opacity 0.2s ease-in-out;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+input[type="range"] {
+  flex: 1;
+}
+
+.control-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 /*===========================================*/

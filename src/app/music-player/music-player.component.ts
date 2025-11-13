@@ -25,10 +25,19 @@ export class MusicPlayerComponent {
 
   currentTrackIndex = 0;
   audio = new Audio();
-  volume = 0.2; // default 50%
+  volume = 0.2; // default
+  progress = 0; // 0 to 100
+
+
   constructor() {
     this.loadTrack(this.currentTrackIndex)
     this.audio.volume = this.volume
+
+    this.audio.addEventListener('timeupdate', () => {
+      if (this.audio.duration) {
+        this.progress = (this.audio.currentTime / this.audio.duration) * 100;
+      }
+    });
   }
 
   //====================================================================================================
@@ -80,5 +89,20 @@ export class MusicPlayerComponent {
     this.volume = event.target.value / 100;
     this.audio.volume = this.volume;
   }
+
+  seek(event: any) {
+    const value = event.target.value;
+    if (this.audio.duration) {
+      this.audio.currentTime = (value / 100) * this.audio.duration;
+    }
+  }
+
+  formatTime(time: number): string {
+    if (!time) return '0:00';
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+    return `${minutes}:${seconds}`;
+  }
+
 
 }
