@@ -1,10 +1,11 @@
-body,
-body::after,
-body::before,
-.nav-menu,
-.tag, .circle {
+body, body::after, body::before,
+.tag, .time-line, .circle {
   background-color: #191923;
   color: white;
+}
+
+.nav-menu, .content {
+  background-color: #1e1e28
 }
 
 .profile-container,

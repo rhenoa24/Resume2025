@@ -16,7 +16,7 @@
     font-size: 12pt;
   }
 
-  .item-title span {
+  .item-title .subtitle {
     opacity: 0.3;
     font-style: italic;
   }
@@ -43,7 +43,7 @@
   border-width: 5px;
   border-style: solid;
   box-sizing: border-box;
-  margin-top: 5px;
+  margin-top: 33px;
 }
 
   .circle .arrow {
@@ -90,4 +90,13 @@
   width: 50px;
   height: 50px;
   flex-shrink: 0;
+  background-size: contain;
+  position: relative;
+  top: -10px;
+  right: -5px;
+}
+
+.tag {
+    position: relative;
+    left: -5px;
 }

@@ -144,4 +144,5 @@ hr {
   padding: 5px 15px;
   border-radius: 15px;
   white-space: nowrap;
+  width: fit-content;
 }

@@ -1,23 +1,20 @@
 <div class="frame">
 
-  <div class="box r-card">
-    <div class="split">
+  <div class="box r-card split">
 
-      <div class="title-img">
+    <div class="item-title">
+      <b>{{itemTitle}}</b>
+      <span class="subtitle">{{itemRole}}</span>
 
-        <div class="item-img" *ngIf="itemImg"
-             [style.background-image]="'url(../../../../public/images/' + itemImg + ')'"></div>
-
-        <div class="item-title">
-          <b>{{itemTitle}}</b>
-          <span>{{itemRole}}</span>
-        </div>
-      </div>
-
+      <br />
+      <span class="desc">{{itemDesc}}</span>
+      <br />
       <span class="tag">{{itemYear}}</span>
     </div>
 
-    <span class="desc">{{itemDesc}}</span>
+    <div class="item-img" *ngIf="itemImg"
+         [style.background-image]="'url(/images/' + itemImg + ')'"></div>
+
   </div>
 
   <div class="circle highlight-border">
