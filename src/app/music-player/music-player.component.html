@@ -1,9 +1,12 @@
-<div class="sidebar">
+<div class="sidebar" [class.active]="isActive">
 
-  <button class="r-button side-button">
-    <i class="material-symbols-rounded">
-      queue_music
-    </i>
+  <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled">
+    <i class="material-symbols-rounded toggle">queue_music</i>
+    <span class="player-title">Music Player</span>
   </button>
+
+  <div class="music-player-UI">
+
+  </div>
 
 </div>
