@@ -19,8 +19,8 @@ export class MusicPlayerComponent {
   private readonly animationDuration = 500; // in ms, matches your 0.4s animation
 
   tracks: Track[] = [
-    { title: 'just friends', file: '/music-player/just-friends.ogg' },
-    { title: 'bossa uh', file: '/music-player/bossa-uh.ogg' },
+    { title: 'just friends', file: 'music-player/just-friends.ogg' },
+    { title: 'bossa uh', file: 'music-player/bossa-uh.ogg' },
   ];
 
   currentTrackIndex = 0;
