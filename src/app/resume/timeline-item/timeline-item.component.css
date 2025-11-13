@@ -91,6 +91,8 @@
   height: 50px;
   flex-shrink: 0;
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   top: -10px;
   right: -5px;
@@ -99,4 +101,10 @@
 .tag {
     position: relative;
     left: -5px;
+}
+
+.item-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }

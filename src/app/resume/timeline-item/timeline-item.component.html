@@ -6,10 +6,24 @@
       <b>{{itemTitle}}</b>
       <span class="subtitle">{{itemRole}}</span>
 
+      @if (itemDesc){
       <br />
       <span class="desc">{{itemDesc}}</span>
+      }
+
+      @if (itemYear){
       <br />
       <span class="tag">{{itemYear}}</span>
+      }
+
+      <div class="item-tags" *ngIf="itemTagSeries">
+        <span *ngFor="let tag of tags" class="tag">{{ tag }}</span>
+      </div>
+
+      <ul class="item-bullets" *ngIf="itemBulletSeries">
+        <li *ngFor="let bullet of bullets">{{ bullet }}</li>
+      </ul>
+
     </div>
 
     <div class="item-img" *ngIf="itemImg"
