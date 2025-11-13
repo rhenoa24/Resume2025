@@ -33,6 +33,10 @@ body, body::after, body::before,
   border-color: #FF8F99
 }
 
+input[type="range"] {
+  accent-color: #FF8F99
+}
+
 .banner .background-image {
   background-image: url('../../../public/images/banner-photo.jpg');
 }
