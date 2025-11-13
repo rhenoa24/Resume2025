@@ -2,7 +2,8 @@
 
   <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled">
     <i class="material-symbols-rounded toggle">queue_music</i>
-    <span class="player-title">Music Player</span>
+    <span *ngIf="isPlaying" class="player-title">Now Playing</span>
+    <span *ngIf="!isPlaying" class="player-title">Paused</span>
   </button>
 
   <div class="music-player-UI">
@@ -23,8 +24,8 @@
 
     <div class="music-nav">
       <div class="left">
-        <button (click)="next()" class="r-button"><i class="material-symbols-rounded">skip_previous</i></button>
-        <app-hexagon [itemImg]="tracks[currentTrackIndex].img" [isDimmed]="true"></app-hexagon>
+        <button (click)="previous()" class="r-button"><i class="material-symbols-rounded">skip_previous</i></button>
+        <app-hexagon [itemImg]="previousTrack.img" [isDimmed]="true"></app-hexagon>
       </div>
 
       <div class="center"
@@ -49,7 +50,7 @@
 
       <div class="right">
         <button (click)="next()" class="r-button"><i class="material-symbols-rounded">skip_next</i></button>
-        <app-hexagon [itemImg]="tracks[currentTrackIndex].img" [isDimmed]="true"></app-hexagon>
+        <app-hexagon [itemImg]="nextTrack.img" [isDimmed]="true"></app-hexagon>
       </div>
     </div>
 
@@ -61,7 +62,8 @@
 
       <div class="info">
         <span class="song">{{ tracks[currentTrackIndex].title }}</span>
-        <i class="faded">Potsu</i>
+        <i class="faded">{{ tracks[currentTrackIndex].artist }}</i>
+
       </div>
     </div>
 

@@ -37,18 +37,11 @@
   transition: opacity 0.2s ease-in-out;
 }
 
-.control-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-}
-
 .track-play {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
-  width: calc(100% - 95px);
+  width: calc(100% - 110px);
   left: 90px;
   top: -90px;
   position: relative;

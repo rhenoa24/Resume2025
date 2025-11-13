@@ -4,6 +4,7 @@ interface Track {
   title: string;
   img: string;
   file: string;
+  artist: string;
 }
 
 @Component({
@@ -20,9 +21,34 @@ export class MusicPlayerComponent {
   private readonly animationDuration = 500; // in ms, matches your 0.4s animation
 
   tracks: Track[] = [
-    { title: 'just friends', img: 'just-friends.png', file: 'music-player/just-friends.ogg' },
-    { title: 'bossa uh', img: 'bossa-uh.png', file: 'music-player/bossa-uh.ogg' },
+    { title: 'just friends', img: 'just-friends.png', file: 'music-player/just-friends.ogg', artist: 'potsu' },
+    { title: 'bossa uh', img: 'bossa-uh.png', file: 'music-player/bossa-uh.ogg', artist: 'potsu' },
+    { title: 'in the pool', img: 'in-the-pool.png', file: 'music-player/in-the-pool.ogg', artist: 'kensuke ushio' },
+    { title: 'Eternally Yours.', img: 'eternally-yours.png', file: 'music-player/eternally-yours.ogg', artist: 'YukiV4554' },
+    { title: 'your smile is my smile', img: 'your-smile-is-my-smile.png', file: 'music-player/your-smile-is-my-smile.ogg', artist: 'YukiV4554' },
+    { title: 'You showed me what happiness was and I held it forever.', img: 'You-showed-me-what-happiness-was.png', file: 'music-player/You-showed-me-what-happiness-was.ogg', artist: 'YukiV4554' },
+    { title: 'A nameless flower lies in peace.', img: 'A-nameless-flower-lies-in-peace.png', file: 'music-player/A-nameless-flower-lies-in-peace.ogg', artist: 'YukiV4554' },
+    { title: `I'm happy that you're alive, thank you`, img: 'Im-happy-that-youre-alive.png', file: 'music-player/Im-happy-that-youre-alive.ogg', artist: 'YukiV4554' },
+    { title: 'Every time you smile.', img: 'Every-time-you-smile.png', file: 'music-player/Every-time-you-smile.ogg', artist: 'YukiV4554' },
   ];
+
+  get currentTrack(): Track {
+    return this.tracks[this.currentTrackIndex];
+  }
+
+  get previousTrack(): Track {
+    // wrap to last track if currentTrackIndex is 0
+    const prevIndex =
+      (this.currentTrackIndex - 1 + this.tracks.length) % this.tracks.length;
+    return this.tracks[prevIndex];
+  }
+
+  get nextTrack(): Track {
+    // wrap to first track if at last index
+    const nextIndex = (this.currentTrackIndex + 1) % this.tracks.length;
+    return this.tracks[nextIndex];
+  }
+
 
   currentTrackIndex = 0;
   audio = new Audio();
@@ -90,8 +116,7 @@ export class MusicPlayerComponent {
   }
 
   previous() {
-    this.currentTrackIndex =
-      (this.currentTrackIndex - 1 + this.tracks.length) % this.tracks.length
+    this.currentTrackIndex = (this.currentTrackIndex - 1 + this.tracks.length) % this.tracks.length
     this.loadTrack(this.currentTrackIndex)
     this.play()
   }
