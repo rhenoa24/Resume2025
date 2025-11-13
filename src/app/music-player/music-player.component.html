@@ -6,6 +6,15 @@
   </button>
 
   <div class="music-player-UI">
+    <h3>{{ tracks[currentTrackIndex].title }}</h3>
+
+    <div class="controls">
+      <button (click)="previous()">⏮️</button>
+      <button (click)="play()">▶️</button>
+      <button (click)="pause()">⏸️</button>
+      <button (click)="next()">⏭️</button>
+    </div>
+    <input type="range" min="0" max="100" [value]="volume * 100" (input)="setVolume($event)" />
 
   </div>
 
