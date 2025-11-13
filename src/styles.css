@@ -34,6 +34,42 @@ body {
     z-index: 9999;
   }
 
+body {
+  --scrollbar-color: #accdff4d;
+  --scrollbar-color-hover: #accaff78;
+}
+
+*::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 5px;
+}
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-color-hover);
+  }
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+
+span {
+  cursor: inherit;
+}
+
+a {
+  color: inherit;
+}
+
 .material-symbols-rounded {
   font-family: 'Material Symbols Rounded';
   font-weight: normal;
@@ -48,21 +84,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-
-.main-frame {
-  padding: 15px;
-  display: flex;
-  position: relative;
-}
-
-.page-container {
-  /*overflow: auto;*/
-  position: relative;
-  width: 1070px;
-  padding-left: 290px;
-  /*padding-right: 80px;*/
-}
-
 .r-button {
   color: inherit;
   border: 0;
@@ -72,6 +93,7 @@ body {
 .split {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 hr {
@@ -84,6 +106,12 @@ hr {
 }
 
 /**/
+
+.col-2 {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .col-4 {
   gap: 30px;
@@ -111,8 +139,9 @@ hr {
     font-size: 50pt;
   }
 
-/*.sidebar-container {
-  position: absolute;
-  right: 0;
-  width: 80px;
-}*/
+.tag {
+  display: block;
+  padding: 5px 15px;
+  border-radius: 15px;
+  white-space: nowrap;
+}

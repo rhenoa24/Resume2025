@@ -11,6 +11,8 @@ import { BannerComponent } from './banner/banner.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { SkillBarComponent } from './profile/skill-bar/skill-bar.component';
 import { ServicesComponent } from './services/services.component';
+import { ResumeComponent } from './resume/resume.component';
+import { TimelineItemComponent } from './resume/timeline-item/timeline-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ServicesComponent } from './services/services.component';
     BannerComponent,
     NavMenuComponent,
     SkillBarComponent,
-    ServicesComponent
+    ServicesComponent,
+    ResumeComponent,
+    TimelineItemComponent
   ],
   imports: [
     BrowserModule,

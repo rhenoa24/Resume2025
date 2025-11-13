@@ -1,7 +1,8 @@
 body,
 body::after,
 body::before,
-.nav-menu {
+.nav-menu,
+.tag, .circle {
   background-color: #191923;
   color: white;
 }
@@ -25,6 +26,10 @@ body::before,
 
 .highlight-color {
   background-color: #FF8F99
+}
+
+.highlight-border {
+  border-color: #FF8F99
 }
 
 .banner .background-image {

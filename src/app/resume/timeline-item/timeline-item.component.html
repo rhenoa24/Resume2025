@@ -1,0 +1,27 @@
+<div class="frame">
+
+  <div class="box r-card">
+    <div class="split">
+
+      <div class="title-img">
+
+        <div class="item-img" *ngIf="itemImg"
+             [style.background-image]="'url(../../../../public/images/' + itemImg + ')'"></div>
+
+        <div class="item-title">
+          <b>{{itemTitle}}</b>
+          <span>{{itemRole}}</span>
+        </div>
+      </div>
+
+      <span class="tag">{{itemYear}}</span>
+    </div>
+
+    <span class="desc">{{itemDesc}}</span>
+  </div>
+
+  <div class="circle highlight-border">
+    <div class="arrow r-card"></div>
+  </div>
+
+</div>
