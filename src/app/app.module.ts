@@ -13,6 +13,7 @@ import { SkillBarComponent } from './profile/skill-bar/skill-bar.component';
 import { ServicesComponent } from './services/services.component';
 import { ResumeComponent } from './resume/resume.component';
 import { TimelineItemComponent } from './resume/timeline-item/timeline-item.component';
+import { HexagonComponent } from './music-player/hexagon/hexagon.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TimelineItemComponent } from './resume/timeline-item/timeline-item.comp
     SkillBarComponent,
     ServicesComponent,
     ResumeComponent,
-    TimelineItemComponent
+    TimelineItemComponent,
+    HexagonComponent
   ],
   imports: [
     BrowserModule,
