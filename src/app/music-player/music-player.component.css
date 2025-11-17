@@ -1,12 +1,13 @@
 .sidebar {
-  height: 100%;
+  position: sticky;
+  top: 15px;
+  height: calc(100vh - 30px);
   width: 80px;
-  position: fixed;
   display: flex;
   flex-direction: column;
-  /*gap: 10px;*/
   z-index: 15;
   transition: 0.4s ease-in-out;
+  /*box-shadow: -5px 0px 10px 0px #00000030;*/
 }
 
 .side-button {
@@ -28,6 +29,10 @@
   right: 30px;
   white-space: nowrap;
   transition: 0.4s ease-in-out;
+  /**/
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
 }
 
 .music-player-UI, .song-list-UI {
@@ -203,8 +208,6 @@
 /*===========================================*/
 .sidebar.active {
   width: 300px;
-  transform: translateX(-220px);
-  box-shadow: -5px 0px 10px 0px #00000030;
 }
 
   .sidebar.active .side-button i {

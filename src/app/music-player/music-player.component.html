@@ -2,8 +2,11 @@
 
   <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled">
     <i class="material-symbols-rounded toggle">queue_music</i>
-    <span *ngIf="isPlaying" class="player-title">Now Playing</span>
-    <span *ngIf="!isPlaying" class="player-title">Paused</span>
+    <div class="player-title" style="display: flex; gap: 5px">
+      <span *ngIf="isPlaying">Now Playing</span>
+      <span *ngIf="!isPlaying">Paused</span>
+      <app-bars [isPlaying]="isPlaying"></app-bars>
+    </div>
   </button>
 
   <div class="music-player-UI">

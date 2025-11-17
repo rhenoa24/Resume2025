@@ -14,6 +14,7 @@ import { ServicesComponent } from './services/services.component';
 import { ResumeComponent } from './resume/resume.component';
 import { TimelineItemComponent } from './resume/timeline-item/timeline-item.component';
 import { HexagonComponent } from './music-player/hexagon/hexagon.component';
+import { BarsComponent } from './music-player/bars/bars.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HexagonComponent } from './music-player/hexagon/hexagon.component';
     ServicesComponent,
     ResumeComponent,
     TimelineItemComponent,
-    HexagonComponent
+    HexagonComponent,
+    BarsComponent
   ],
   imports: [
     BrowserModule,
