@@ -98,11 +98,4 @@
 
 .profile-side-button {
   display: none;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  position: fixed;
-  z-index: 2;
-  left: 0;
 }

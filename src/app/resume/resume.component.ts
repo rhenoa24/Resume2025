@@ -59,4 +59,14 @@ export class ResumeComponent {
   protected WorkBullet3: string = `
   To be added...
   `
+
+  protected softwareTags: string = `
+  Visual Studio ||
+  Sourcetree ||
+  Github ||
+  Confluence ||
+  Jira ||
+  Microsoft Teams ||
+  Discord
+  `
 }

@@ -165,7 +165,9 @@
   position: absolute;
   top: 480px;
   height: calc(100% - 480px);
-  overflow: auto;
+  /**/
+  overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   /**/
   display: flex;
