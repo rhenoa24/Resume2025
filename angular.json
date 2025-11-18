@@ -38,6 +38,7 @@
             ],
             "styles": [
               "src/styles.css",
+              "src/assets/css/Breakpoint.css",
               "src/assets/css/DarkTheme.css"
             ],
             "scripts": []
