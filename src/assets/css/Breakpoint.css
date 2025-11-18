@@ -14,6 +14,11 @@
 
   .col-4 {
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .vertical-timeline {
+    gap: 15px !important;
   }
 
   .col-2 {
@@ -26,7 +31,8 @@
     justify-content: space-evenly;
     position: fixed !important;
     width: 100%;
-    padding: 0 80px !important;
+    padding: 0 50px !important;
+    font-size: 8pt;
   }
 
   .profile-container {
