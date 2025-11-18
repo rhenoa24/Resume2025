@@ -1,8 +1,16 @@
 @media (max-width: 1032px) {
 
-  body::before, body::after {
-    content: none;
+  body, html {
+    scrollbar-width: none;
   }
+
+    body::before, body::after {
+      content: none;
+    }
+
+    body:has(.backdrop-overlay.active) {
+      overflow: clip;
+    }
 
   .main-frame {
     padding: 0 !important;
@@ -54,11 +62,11 @@
       /**/
       display: flex !important;
       transition: 0.4s ease-in-out;
-      padding: 30px 25px;
     }
 
     .profile-container.active .profile-side-button {
-      left: calc(290px - 74px);
+      left: calc(290px - 84px);
+      padding: 30px !important;
     }
 
     .profile-container .profile-card {
@@ -94,14 +102,16 @@
     height: 100vh !important;
   }
 
-    .sidebar .side-button {
-      padding: 30px 25px !important;
-    }
-
     .sidebar:not(.active) .side-button,
     .sidebar:not(.active) {
       background-color: transparent !important;
     }
+
+    .profile-container .profile-side-button, .sidebar .side-button {
+      padding: 30px 15px !important;
+    }
+
+  /**/
 
   profile:has(.profile-container.active),
   music-player:has(.sidebar.active) {
@@ -110,8 +120,10 @@
 
   .profile-container:not(.active),
   .sidebar:not(.active) {
-    width: 76px !important;
+    width: 54px !important;
   }
+
+  /**/
 
   .backdrop-overlay {
     opacity: 0;
@@ -126,4 +138,10 @@
       opacity: 1;
       pointer-events: all;
     }
+
+  /**/
+
+  .banner .title {
+    font-size: 30pt !important;
+  }
 }
