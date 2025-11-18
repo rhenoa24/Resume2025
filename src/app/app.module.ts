@@ -15,6 +15,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { TimelineItemComponent } from './resume/timeline-item/timeline-item.component';
 import { HexagonComponent } from './music-player/hexagon/hexagon.component';
 import { BarsComponent } from './music-player/bars/bars.component';
+import { RotatingTextComponent } from './banner/rotating-text/rotating-text.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BarsComponent } from './music-player/bars/bars.component';
     ResumeComponent,
     TimelineItemComponent,
     HexagonComponent,
-    BarsComponent
+    BarsComponent,
+    RotatingTextComponent
   ],
   imports: [
     BrowserModule,
