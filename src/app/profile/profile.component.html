@@ -1,4 +1,8 @@
-<div class="profile-container">
+<div class="profile-container" [class.active]="isActive">
+
+  <button class="r-button profile-side-button" (click)="Toggle()" [disabled]="toggleDisabled">
+    <i class="material-symbols-rounded toggle">account_circle</i>
+  </button>
 
   <div class="profile-card">
 

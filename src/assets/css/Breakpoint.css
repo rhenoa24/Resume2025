@@ -30,12 +30,49 @@
   }
 
   .profile-container {
-    display: none !important;
+    /*display: none !important;*/
     position: fixed !important;
     top: 0 !important;
     left: 0;
     height: 100vh !important;
+    transition: 0.4s ease-in-out;
   }
+
+    .profile-container .profile-side-button {
+      display: flex !important;
+      transition: 0.4s ease-in-out;
+    }
+
+    .profile-container.active .profile-side-button {
+      left: calc(290px - 80px);
+    }
+
+    .profile-container .profile-card {
+      opacity: 0;
+      transition: opacity 0.15s ease-in-out;
+    }
+
+    .profile-container .info-card {
+      opacity: 0;
+      transition: opacity 0s;
+    }
+
+    .profile-container.active .profile-card {
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out 0.3s;
+    }
+    
+    .profile-container.active .info-card {
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out 0.6s;
+    }
+
+    .profile-container:not(.active) {
+      background-color: transparent !important;
+      width: 80px !important;
+      overflow: hidden !important;
+    }
+
 
   .sidebar {
     position: fixed !important;
