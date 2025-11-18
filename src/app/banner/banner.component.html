@@ -5,8 +5,13 @@
       Hello, I'm Aly!
     </span>
     <span class="title">
-      I make <span class="highlight">cool websites.</span>
-      <!--<app-rotating-text></app-rotating-text>-->
+      <span>I can create </span>
+      <span class="highlight">
+        <app-rotating-text [texts]="['cool websites.', 'wireframes.', 'mockups.', 'prototypes.', 'video presentations.', '2D illustrations.', 'logo designs.']"
+                           [period]="2000">
+        </app-rotating-text>
+      </span>
+
     </span>
   </div>
 
