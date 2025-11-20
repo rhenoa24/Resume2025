@@ -57,7 +57,18 @@ export class ResumeComponent {
   `
 
   protected WorkBullet3: string = `
-  To be added...
+  Contributed to projects for UTS Philippines Inc., Flake Farmville Corp., and multiple partner companies, supporting both development and creative requirements across teams and regions.
+||Adopted and mastered new corporate production tools, including TechSmith Camtasia for polished video editing and TechSmith SnagIt for fast, professional screenshot documentation.
+||Created structured wireframes using Balsamiq Wireframes, leveraging component templates to streamline layout planning and communication with stakeholders.
+||Collaborated closely with the Marketing Team, producing a wide range of creative materials such as brochures, promotional videos, ID and uniform designs, logos, letterheads, business cards, investor presentation refinements, and organizational charts.
+||Used advanced AI upscaling tools (Seedream 4) and image-generation models (Google Nanobanana, Reve , and others via LMArena) to enhance visual assets and improve the quality of marketing materials.
+||Expanded expertise in AI-driven voice production, creating custom locally trained voice models using Applio’s RVC (Retrieval-Based Voice Conversion) and experimenting with F5-TTS and E2-TTS for high-quality video voice-overs.
+||Utilized Suno AI for AI music generation to produce custom backing tracks, including themes derived from the official company chime, for demonstration videos.
+||Led the full redesign and reconstruction of the company website—replicating an inaccessible WordPress design and transforming it into a scalable, fully customizable Angular application.
+||Managed the official YouTube channel for content publishing and provided visual recommendations for the company’s Facebook presence.
+||Spearheaded a modern and visually distinct UI design for the UTS 2.0 Portal, incorporating glassmorphism, dynamic backgrounds, animation sequences, multi-theme support, and consistent UI styling across modules.
+||Assisted backend developers by providing HTML/CSS guidance, quick UI fixes, and support in repetitive SQL tasks to improve team efficiency.
+||Supported external partner companies linked to the CEO—including Falcon Training Services (Selangor, Malaysia), Lautan Tenang Jaya Safety Training (Jakarta, Indonesia), and Oppr.ai (Zuid-Holland, Netherlands)—by producing high-quality presentations, graphics, and video content, enabling collaboration with international teams.
   `
 
   protected softwareTags: string = `
