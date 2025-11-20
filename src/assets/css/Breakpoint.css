@@ -1,16 +1,16 @@
 @media (max-width: 1032px) {
 
-  body, html {
+  /*  body, html {
     scrollbar-width: none;
+  }*/
+
+  body::before, body::after {
+    content: none;
   }
 
-    body::before, body::after {
-      content: none;
-    }
-
-    body:has(.backdrop-overlay.active) {
-      overflow: clip;
-    }
+  body:has(.backdrop-overlay.active) {
+    overflow: clip;
+  }
 
   .main-frame {
     padding: 0 !important;
