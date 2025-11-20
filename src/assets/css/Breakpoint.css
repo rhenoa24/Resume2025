@@ -145,3 +145,10 @@
     font-size: 30pt !important;
   }
 }
+
+@media (max-width: 425px) {
+  .banner .text-group {
+    position: absolute;
+    top: calc(100% - 172px);
+  }
+}
