@@ -148,7 +148,7 @@
 
 @media (max-width: 425px) {
   .banner .text-group {
-    position: absolute;
-    top: calc(100% - 172px);
+    height: 172px;
+    justify-content: flex-start !important;
   }
 }
