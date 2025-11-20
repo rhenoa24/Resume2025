@@ -8,6 +8,7 @@
   z-index: 15;
   transition: 0.4s ease-in-out;
   /*box-shadow: -5px 0px 10px 0px #00000030;*/
+  overflow: hidden;
 }
 
 .side-button {
@@ -33,6 +34,9 @@
   display: flex;
   gap: 10px;
   align-items: flex-end;
+  /**/
+  pointer-events: none;
+  user-select: none;
 }
 
 .music-player-UI, .song-list-UI {

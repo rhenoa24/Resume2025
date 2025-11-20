@@ -1,7 +1,12 @@
 <div class="nav-menu">
-  <a class="active">HOME</a>
-  <a>SERVICES</a>
-  <a>RESUME</a>
-  <a>WORKS</a>
-  <a>CONTACT</a>
+  <a [class.active]="currentScroll === 'home'"
+     (click)="scrollTo('home')">HOME</a>
+  <a [class.active]="currentScroll === 'services'"
+     (click)="scrollTo('services')">SERVICES</a>
+  <a [class.active]="currentScroll === 'resume'"
+     (click)="scrollTo('resume')">RESUME</a>
+  <!--<a [class.active]="currentScroll === 'works'"
+     (click)="scrollTo('works')">WORKS</a>
+  <a [class.active]="currentScroll === 'contact'"
+     (click)="scrollTo('contact')">CONTACT</a>-->
 </div>

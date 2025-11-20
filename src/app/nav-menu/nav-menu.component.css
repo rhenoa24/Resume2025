@@ -10,6 +10,18 @@
   backdrop-filter: blur(40px);
 }
 
-  .nav-menu a:not(.active) {
-    opacity: 0.3
+  .nav-menu a {
+    cursor: default;
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
+
+    .nav-menu a:not(.active) {
+      opacity: 0.3;
+      cursor: pointer
+    }
+
+      .nav-menu a:not(.active):hover {
+        opacity: 0.5;
+      }
