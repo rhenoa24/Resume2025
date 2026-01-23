@@ -83,7 +83,7 @@ export class MusicPlayerComponent {
       this.toggleDisabled = false
     }, this.animationDuration)
 
-    if (this.isPlaying === false) {
+    if (this.isPlaying === false && this.isActive === true) {
       this.play()
     }
   }
