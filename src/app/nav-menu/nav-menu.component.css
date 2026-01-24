@@ -25,3 +25,17 @@
       .nav-menu a:not(.active):hover {
         opacity: 0.5;
       }
+
+  .nav-menu .r-floating-div-container {
+    z-index: -10;
+  }
+
+  .nav-menu .r-floating-div {
+    /*  width: 1000px;
+    height: 1000px;*/
+    z-index: -1;
+  }
+
+  .nav-menu:hover .r-floating-div {
+    opacity: 10%;
+  }

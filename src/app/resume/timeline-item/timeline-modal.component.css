@@ -27,7 +27,7 @@
   height: 1000px;
 }
 
-.r-floating-div-container {
+.modal-content .r-floating-div-container {
   z-index: -10;
 }
 

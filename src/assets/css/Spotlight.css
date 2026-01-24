@@ -18,10 +18,11 @@
   mix-blend-mode: soft-light;
 }
 
-.r-card:hover .r-floating-div,
-.modal-content:hover .r-floating-div {
-  opacity: 50%;
-}
+
+  .r-card:hover .r-floating-div,
+  .r-floating-div-container:hover .r-floating-div {
+    opacity: 50%;
+  }
 
 .r-floating-div {
   z-index: -10;
@@ -34,7 +35,7 @@
   left: 0;
   transform: translate(-50%, -50%) translateZ(0);
   /**/
-  background: radial-gradient(#babaff, transparent 60%);
+  background: radial-gradient(#c1c1c1, transparent 60%);
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -42,5 +43,3 @@
   .r-floating-div.smooth {
     transition: all 1s ease;
   }
-
-

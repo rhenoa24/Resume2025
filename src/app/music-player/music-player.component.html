@@ -1,6 +1,6 @@
 <div class="sidebar" [class.active]="isActive">
 
-  <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled">
+  <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled" Spotlight>
     <i class="material-symbols-rounded toggle">queue_music</i>
     <div class="player-title" style="display: flex; gap: 5px">
       <span *ngIf="isPlaying">Now Playing</span>
