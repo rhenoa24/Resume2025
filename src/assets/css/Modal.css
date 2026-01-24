@@ -1,0 +1,195 @@
+/* Remove modal slide down animation */
+.modal.fade .modal-dialog {
+  transition: none !important;
+  transform: translateY(0);
+}
+
+.modal.fade {
+  transition: none !important;
+}
+
+.modal-ornament {
+  position: relative;
+  color: black;
+  opacity: 0.3;
+  background: none;
+  border: none;
+  font-size: 12pt;
+  line-height: 1;
+  padding: 0px 10px;
+}
+
+  .modal-ornament:hover {
+    opacity: 0.5;
+  }
+
+/* Overwrite bootstrap */
+.modal-dialog-centered-draggable {
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+
+  .modal-dialog-centered-draggable.remove {
+    top: initial;
+    transform: none !important;
+  }
+
+  .modal-dialog-centered-draggable:not(.modal-dialog-max) {
+    transform: translateY(-54%) !important;
+  }
+
+  .modal-dialog-centered-draggable .modal-header {
+    cursor: move;
+  }
+
+  .modal-dialog-centered-draggable.modal-dialog-max .modal-header,
+  .modal-dialog-centered-draggable.remove .modal-header {
+    cursor: default;
+  }
+
+.modal-ornament {
+  filter: invert(1) contrast(0.5) grayscale(100%);
+  box-shadow: none;
+}
+
+.modal-dialog-max {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100%;
+  margin: 0;
+}
+
+  .modal-dialog-max .modal-header {
+    min-height: 46px;
+  }
+
+  .modal-dialog-max .modal-content {
+    height: 100%;
+  }
+
+  .modal-dialog-max #table-card {
+    width: calc(100vw - 34px)
+  }
+
+.modal-body-max {
+  height: 92vh !important;
+  max-height: 92vh !important;
+}
+
+  .modal-body-max:has(+ .modal-footer) .r-form-container,
+  .modal-body-max:has(+ .modal-footer) .container {
+    height: 86vh !important;
+    max-height: 86vh !important;
+    width: 100%;
+  }
+
+  .modal-body-max .r-form-container {
+    width: 100% !important;
+    max-width: initial !important;
+  }
+
+.modal-dialog-max .modal-header {
+  min-height: 46px;
+}
+
+.modal-dialog-max .modal-content {
+  border-radius: 0;
+}
+
+.win-maximize::before {
+  content: "";
+  background-image: url(../images/win-maximize.svg);
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -3px;
+}
+
+.win-minimize::before {
+  content: "";
+  background-image: url(../images/win-minimize.svg);
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -3px;
+}
+
+/* OVERRIDE BOOTSTRAP BTN-CLOSE*/
+.btn-close {
+  background-image: none;
+  color: inherit;
+}
+
+  .btn-close::before {
+    content: "\F659";
+    font-family: "bootstrap-icons";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.5pt;
+    line-height: 0;
+    /**/
+    position: relative;
+    /*top: 3px;*/
+  }
+
+/*Hide default bootstrap modal backdrop*/
+.modal-backdrop {
+  display: none;
+}
+
+.r-modal-backdrop {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: opacity 0.4s linear forwards;
+  opacity: 0;
+  pointer-events: all;
+}
+
+@keyframes opacity {
+  to {
+    opacity: 1
+  }
+}
+
+/* tablist */
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-header {
+  padding-bottom: 0;
+}
+
+.modal-footer {
+  padding-top: 0;
+}
+
+.nav.nav-tabs {
+  border: none;
+  column-gap: 25px;
+  row-gap: 10px;
+}
+
+.nav-link {
+  color: inherit !important;
+  background-color: transparent !important;
+  border: none !important;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+  .nav-link:not(.active) {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+    .nav-link:not(.active):hover {
+      opacity: 0.5;
+    }

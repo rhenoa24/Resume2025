@@ -1,0 +1,56 @@
+.modal-dialog {
+  --bs-modal-width: 860px;
+}
+
+.modal-header .item-img {
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+}
+
+.nav-tabs {
+  padding-left: 0;
+}
+
+.modal-content {
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  color: inherit;
+}
+
+  .modal-content:hover .r-floating-div {
+    opacity: 10%;
+  }
+
+.r-floating-div {
+  width: 1000px;
+  height: 1000px;
+}
+
+.r-floating-div-container {
+  z-index: -10;
+}
+
+.modal-content ul, .modal-content p {
+  margin: 0;
+}
+
+.modal-body {
+  padding-bottom: 0;
+}
+
+.tab-content {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+
+}
+
+  .gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }

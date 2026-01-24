@@ -20,7 +20,7 @@
     padding: 30px 15px !important;
   }
 
-  .col-4 {
+  .r-col-4 {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
@@ -29,7 +29,7 @@
     gap: 15px !important;
   }
 
-  .col-2 {
+  .r-col-2 {
     grid-template-columns: 1fr;
   }
 

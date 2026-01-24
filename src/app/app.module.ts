@@ -3,7 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DraggableModalDirective } from '../assets/directives/isDraggableModal.directive';
+import { SpotlightDirective } from '../assets/directives/spotlight.directive';
+
 import { TextPressureComponent } from './text-pressure/text-pressure.component';
+
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MusicPlayerComponent } from './music-player/music-player.component';
@@ -16,6 +20,10 @@ import { TimelineItemComponent } from './resume/timeline-item/timeline-item.comp
 import { HexagonComponent } from './music-player/hexagon/hexagon.component';
 import { BarsComponent } from './music-player/bars/bars.component';
 import { RotatingTextComponent } from './banner/rotating-text/rotating-text.component';
+import { MEICTComponent } from './resume/timeline-item/meict/meict.component';
+import { DatadefendersComponent } from './resume/timeline-item/datadefenders/datadefenders.component';
+import { ArtistComponent } from './resume/timeline-item/artist/artist.component';
+
 
 @NgModule({
   declarations: [
@@ -32,11 +40,18 @@ import { RotatingTextComponent } from './banner/rotating-text/rotating-text.comp
     TimelineItemComponent,
     HexagonComponent,
     BarsComponent,
-    RotatingTextComponent
+    RotatingTextComponent,
+    MEICTComponent,
+    DraggableModalDirective,
+    SpotlightDirective,
+    DatadefendersComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

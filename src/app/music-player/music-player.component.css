@@ -165,18 +165,23 @@
   /*background: red;*/
   padding: 20px;
   padding-bottom: 50px;
-  padding-right: 0;
+  padding-right: 5px;
   position: absolute;
   top: 480px;
   height: calc(100% - 480px);
   /**/
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: none;
-  /**/
   display: flex;
   flex-direction: column;
 }
+
+.song-list-UI {
+  overflow: hidden;
+}
+
+  .song-list-UI:hover {
+    overflow: auto;
+    padding-right: 0px;
+  }
 
   .song-list-UI .song-item {
     display: flex;

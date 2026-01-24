@@ -1,0 +1,46 @@
+.r-card:has(.r-floating-div),
+.modal-content:has(.r-floating-div) {
+  position: relative;
+}
+
+.r-floating-div-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  /*z-index: -10;*/
+  border-radius: inherit;
+  overflow: hidden;
+  /**/
+  z-index: 1;
+  mix-blend-mode: soft-light;
+}
+
+.r-card:hover .r-floating-div,
+.modal-content:hover .r-floating-div {
+  opacity: 50%;
+}
+
+.r-floating-div {
+  z-index: -10;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%) translateZ(0);
+  /**/
+  background: radial-gradient(#babaff, transparent 60%);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+  .r-floating-div.smooth {
+    transition: all 1s ease;
+  }
+
+

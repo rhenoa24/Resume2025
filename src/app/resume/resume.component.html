@@ -1,4 +1,4 @@
-<div class="col-2">
+<div class="r-col-2">
 
   <div class="vertical-timeline">
     <div class="page-title">Education</div>
@@ -35,19 +35,12 @@
   <div class="vertical-timeline">
     <div class="page-title">Work History</div>
     <div class="time-line"></div>
-    <timeline-item itemTitle="ME-ICT Corp."
-                   itemRole="Software Engineer & UI/UX Designer for United Training Services" itemYear="Sept 2024 - Present"
-                   [itemBulletSeries]="WorkBullet3"
-                   itemImg="MEICT.png"></timeline-item>
-    <timeline-item itemTitle="Data Defenders, LLC"
-                   itemRole="Software Engineer & UI/UX Designer" itemYear="Jan 2023 – Sept 2024"
-                   [itemBulletSeries]="WorkBullet1"
-                   itemImg="DD.png"></timeline-item>
-    <timeline-item itemTitle="Freelance Graphic Artist"
-                   itemRole="2D Character Illustrator" itemYear="Apr 2020 – Feb 2023"
-                   [itemBulletSeries]="WorkBullet2"
-                   itemImg="PFP.png"></timeline-item>
+    <app-meict></app-meict>
+    <app-datadefenders></app-datadefenders>
+    <app-artist></app-artist>
+
     <timeline-item [itemTagSeries]="softwareTags"></timeline-item>
+
   </div>
 
 </div>

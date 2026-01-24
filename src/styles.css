@@ -119,15 +119,23 @@ hr {
   opacity: 0.4;
 }
 
-/**/
+.link {
+  display: flex;
+  align-items: center;
+}
 
-.col-2 {
+  .link.faded:hover {
+    opacity: 1;
+  }
+
+/**/
+.r-col-2 {
   gap: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.col-4 {
+.r-col-4 {
   gap: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

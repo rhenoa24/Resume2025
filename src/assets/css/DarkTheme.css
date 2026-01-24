@@ -22,11 +22,11 @@ body, body::after, body::before,
 }
 
 .highlight {
-  color: #FF8F99
+  color: #FF8F99 !important
 }
 
 .highlight-color {
-  background-color: #FF8F99
+  background-color: #FF8F99 !important
 }
 
 .highlight-border {
@@ -39,4 +39,8 @@ input[type="range"] {
 
 .banner .background-image {
   background-image: url('../../../public/images/banner-photo.jpg');
+}
+
+.r-modal-backdrop {
+  background-color: #00000085;
 }
