@@ -193,3 +193,11 @@
     .nav-link:not(.active):hover {
       opacity: 0.5;
     }
+
+.modal-header button:focus {
+  box-shadow: none
+}
+
+.modal-header button:hover {
+    color: inherit;
+}

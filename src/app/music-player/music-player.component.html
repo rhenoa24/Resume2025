@@ -1,7 +1,7 @@
 <div class="sidebar" [class.active]="isActive">
 
   <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled" Spotlight>
-    <i class="material-symbols-rounded toggle">queue_music</i>
+    <i class="gi filled gi-music toggle"></i>
     <div class="player-title" style="display: flex; gap: 5px">
       <span *ngIf="isPlaying">Now Playing</span>
       <span *ngIf="!isPlaying">Paused</span>
@@ -14,11 +14,11 @@
     <div class="volume-set">
       <div class="volume-icons">
         @if (volume === 1) {
-        <i class="material-symbols-rounded">volume_up</i>
+        <i class="gi filled gi-volume_up"></i>
         } @else if (volume === 0) {
-        <i class="material-symbols-rounded">volume_mute</i>
+        <i class="gi filled gi-volume_mute"></i>
         } @else {
-        <i class="material-symbols-rounded">volume_down</i>
+        <i class="gi filled gi-volume_down"></i>
         }
       </div>
 
@@ -27,7 +27,7 @@
 
     <div class="music-nav">
       <div class="left">
-        <button (click)="previous()" class="r-button"><i class="material-symbols-rounded">skip_previous</i></button>
+        <button (click)="previous()" class="r-button"><i class="gi filled gi-skip_previous"></i></button>
         <app-hexagon [itemImg]="previousTrack.img" [isDimmed]="true"></app-hexagon>
       </div>
 
@@ -52,15 +52,15 @@
       </div>
 
       <div class="right">
-        <button (click)="next()" class="r-button"><i class="material-symbols-rounded">skip_next</i></button>
+        <button (click)="next()" class="r-button"><i class="gi filled gi-skip_next"></i></button>
         <app-hexagon [itemImg]="nextTrack.img" [isDimmed]="true"></app-hexagon>
       </div>
     </div>
 
     <div class="track-play" (click)="playToggle()">
       <div>
-        <button *ngIf="!isPlaying" class="r-button"><i class="material-symbols-rounded">play_arrow</i></button>
-        <button *ngIf="isPlaying" class="r-button"><i class="material-symbols-rounded">pause</i></button>
+        <button *ngIf="!isPlaying" class="r-button"><i class="gi filled gi-play_arrow"></i></button>
+        <button *ngIf="isPlaying" class="r-button"><i class="gi filled gi-pause"></i></button>
       </div>
 
       <div class="info">
@@ -78,10 +78,11 @@
          [class.active]="i === currentTrackIndex"
          (click)="playTrack(i)">
 
+      <div style="z-index: 1">
+        <app-hexagon [itemImg]="track.img" [rotate]="true"></app-hexagon>
+      </div>
 
-      <app-hexagon [itemImg]="track.img" [rotate]="true"></app-hexagon>
-
-      <div class="song-info">
+      <div class="song-info" Spotlight>
         <span class="song-title">{{ track.title }}</span>
         <i class="song-artist faded">{{ track.artist }}</i>
       </div>

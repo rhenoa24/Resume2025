@@ -1,6 +1,17 @@
 <div class="r-col-2">
 
   <div class="vertical-timeline">
+    <div class="page-title">Work History</div>
+    <div class="time-line"></div>
+    <app-meict></app-meict>
+    <app-datadefenders></app-datadefenders>
+    <app-artist></app-artist>
+
+    <timeline-item [itemTagSeries]="softwareTags"></timeline-item>
+
+  </div>
+
+  <div class="vertical-timeline">
     <div class="page-title">Education</div>
     <div class="time-line"></div>
     <timeline-item itemTitle="Polytechnic University of the Philippines"
@@ -27,19 +38,6 @@
 
     <timeline-item itemTitle="Became experienced with"
                    [itemBulletSeries]="CompBullet3"></timeline-item>
-
-  </div>
-
-
-
-  <div class="vertical-timeline">
-    <div class="page-title">Work History</div>
-    <div class="time-line"></div>
-    <app-meict></app-meict>
-    <app-datadefenders></app-datadefenders>
-    <app-artist></app-artist>
-
-    <timeline-item [itemTagSeries]="softwareTags"></timeline-item>
 
   </div>
 

@@ -14,15 +14,16 @@
   border-radius: inherit;
   overflow: hidden;
   /**/
-  z-index: 1;
+  z-index: -5;
   mix-blend-mode: soft-light;
 }
 
-
-  .r-card:hover .r-floating-div,
-  .r-floating-div-container:hover .r-floating-div {
-    opacity: 50%;
-  }
+.profile-card:hover .r-floating-div,
+.song-item:hover .r-floating-div,
+.r-button:hover .r-floating-div,
+.r-card:hover .r-floating-div {
+  opacity: 50%;
+}
 
 .r-floating-div {
   z-index: -10;
@@ -37,7 +38,7 @@
   /**/
   background: radial-gradient(#c1c1c1, transparent 60%);
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.4s ease;
 }
 
   .r-floating-div.smooth {

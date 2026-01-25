@@ -51,6 +51,6 @@
 
   .gallery img {
     width: 100%;
-    height: 250px;
     object-fit: cover;
+    aspect-ratio: 3 / 1;
   }
