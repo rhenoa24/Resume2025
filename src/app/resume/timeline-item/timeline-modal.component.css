@@ -14,7 +14,7 @@
 }
 
 .modal-content {
-  background-color: transparent;
+  background-color: #ffffff05;
   backdrop-filter: blur(40px);
   color: inherit;
 }
@@ -45,10 +45,7 @@
   flex-direction: column;
   overflow: auto;
   padding-right: 10px;
-}
-
-.tab-pane .details {
-
+  width: 100%;
 }
 
 .gallery {

@@ -101,3 +101,8 @@
 .profile-side-button {
   display: none;
 }
+
+
+.gi-account_circle::before {
+  font-size: 24px;
+}

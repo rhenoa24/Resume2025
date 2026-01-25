@@ -49,7 +49,8 @@
      aria-labelledby="R24roleDetailsModalLabel"
      aria-hidden="true">
 
-  <div class="modal-dialog modal-dialog-centered-draggable" isDraggableModal>
+  <div class="modal-dialog modal-dialog-centered-draggable" isDraggableModal
+       [ngClass]="{'modal-dialog-max': this.isModalMaximized}">
     <div class="modal-content" Spotlight>
 
       <!-- Header -->
@@ -61,7 +62,14 @@
           </h5>
           <span>2D Character Illustrator</span>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        <div class="ornaments">
+          <button class="bi win-maximize modal-ornament" (click)="MaxModal_Toggle()" *ngIf="this.isModalMaximized === false"></button>
+          <button class="bi win-minimize modal-ornament" (click)="MaxModal_Toggle()" *ngIf="this.isModalMaximized === true"></button>
+
+          <button type="button" class="btn-close modal-ornament" (click)="Reset()" data-bs-dismiss="modal"></button>
+        </div>
+
       </div>
 
       <!-- Body -->
@@ -119,32 +127,42 @@
                    src="images/R24 Banner.jpg" />
             </div>
 
-            <div class="details">
-              <p>
-                Rhenoa24 began during the 2020 lockdown as a way to support my family when traditional income was unavailable. What started as a necessity quickly became a long-term creative pursuit, evolving into a freelance illustration practice serving clients worldwide.
-              </p>
-              <p>
-                Over nearly three years, I produced hundreds of commissioned artworks for independent creators and streamers, building a reputation for reliability, affordability, and consistent visual quality. This project remains a passion-driven creative platform and a foundation of my visual design skills.
-              </p>
-            </div>
+            <p>
+              Rhenoa24 began during the 2020 lockdown as a way to support my family when traditional income was unavailable. What started as a necessity quickly became a long-term creative pursuit, evolving into a freelance illustration practice serving clients worldwide.
+            </p>
+            <p>
+              Over nearly three years, I produced hundreds of commissioned artworks for independent creators and streamers, building a reputation for reliability, affordability, and consistent visual quality. This project remains a passion-driven creative platform and a foundation of my visual design skills.
+            </p>
+
           </div>
 
           <!-- Illustration Work -->
           <div class="tab-pane fade" id="R24tab-2">
+
+            <div class="gallery">
+              <img src="images/comms2.png" />
+            </div>
+
             <ul>
               <li>Created over 400 custom digital illustrations across character art, profile images, stream assets, and promotional visuals.</li>
               <li>Adapted illustration styles to match client branding, personality, and platform needs.</li>
               <li>Maintained consistent quality while handling high commission volume and tight turnaround times.</li>
             </ul>
+
           </div>
 
           <!-- Client Collaboration -->
           <div class="tab-pane fade" id="R24tab-3">
+            <div class="gallery">
+              <img src="images/comms.png" />
+            </div>
+
             <ul>
               <li>Worked closely with local and international clients to translate ideas into polished visual outputs.</li>
               <li>Communicated clearly on revisions, timelines, and expectations to ensure client satisfaction.</li>
               <li>Built repeat-client relationships within the streaming and creator community.</li>
             </ul>
+
           </div>
 
           <!-- Tools & Skills -->
@@ -162,7 +180,7 @@
 
       <!-- Footer -->
       <div class="modal-footer">
-        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+        <button class="btn btn-cancel btn-outline-secondary" (click)="Reset()" data-bs-dismiss="modal">
           Close
         </button>
       </div>

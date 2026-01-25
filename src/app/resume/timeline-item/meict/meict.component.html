@@ -51,7 +51,8 @@
      aria-labelledby="roleDetailsModalLabel"
      aria-hidden="true">
 
-  <div class="modal-dialog modal-dialog-centered-draggable" isDraggableModal>
+  <div class="modal-dialog modal-dialog-centered-draggable" isDraggableModal
+       [ngClass]="{'modal-dialog-max': this.isModalMaximized}">
     <div class="modal-content" Spotlight>
 
       <!-- Header -->
@@ -63,7 +64,14 @@
           </h5>
           <span>Software Engineer & UI/UX Designer</span>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        <div class="ornaments">
+          <button class="bi win-maximize modal-ornament" (click)="MaxModal_Toggle()" *ngIf="this.isModalMaximized === false"></button>
+          <button class="bi win-minimize modal-ornament" (click)="MaxModal_Toggle()" *ngIf="this.isModalMaximized === true"></button>
+
+          <button type="button" class="btn-close modal-ornament" (click)="Reset()" data-bs-dismiss="modal"></button>
+        </div>
+
       </div>
 
       <!-- Body -->
@@ -128,11 +136,10 @@
               <img src="images/UTS Company.jpg" />
             </div>
 
-            <div class="details">
               <p>
                 At ME-ICT Corp., I work as a hybrid <strong>Software Engineer and UI/UX Designer</strong> supporting <strong>United Training Services</strong> and partner companies. My role spans frontend engineering, design systems, multimedia production, and cross-team collaboration—often bridging technical and creative requirements across regions.
               </p>
-            </div>
+         
           </div>
 
           <!-- Engineering & UI/UX -->
@@ -180,7 +187,7 @@
 
       <!-- Footer -->
       <div class="modal-footer">
-        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+        <button class="btn btn-cancel btn-outline-secondary" (click)="Reset()"  data-bs-dismiss="modal">
           Close
         </button>
       </div>

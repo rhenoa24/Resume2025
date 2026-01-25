@@ -80,3 +80,7 @@
 .gi-pause::before {
   content: "\e034";
 }
+
+.gi-account_circle::before {
+  content: "\e853";
+}

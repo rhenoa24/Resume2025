@@ -1,4 +1,8 @@
 /* Remove modal slide down animation */
+.modal {
+  --bs-modal-zindex: 10000;
+}
+
 .modal.fade .modal-dialog {
   transition: none !important;
   transform: translateY(0);
@@ -119,7 +123,6 @@
 /* OVERRIDE BOOTSTRAP BTN-CLOSE*/
 .btn-close {
   background-image: none;
-  color: inherit;
 }
 
   .btn-close::before {
@@ -136,9 +139,9 @@
   }
 
 /*Hide default bootstrap modal backdrop*/
-.modal-backdrop {
+/*.modal-backdrop {
   display: none;
-}
+}*/
 
 .r-modal-backdrop {
   z-index: -1;
@@ -167,8 +170,14 @@
   padding-bottom: 0;
 }
 
-.modal-footer {
+/*.modal-footer {
   padding-top: 0;
+}*/
+
+.ornaments {
+  flex-shrink: 0;
+  right: 16px;
+  position: absolute;
 }
 
 .nav.nav-tabs {
@@ -201,8 +210,4 @@
 
 .modal-header button:focus {
   box-shadow: none
-}
-
-.modal-header button:hover {
-    color: inherit;
 }
