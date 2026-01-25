@@ -10,6 +10,7 @@
 
 .nav-tabs {
   padding-left: 0;
+  min-width: 135px;
 }
 
 .modal-content {
@@ -37,12 +38,16 @@
 
 .modal-body {
   padding-bottom: 0;
+  display: flex;
+  gap: 20px;
+  height: 385px;
 }
 
 .tab-content {
   gap: 10px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .gallery {

@@ -173,9 +173,14 @@
 
 .nav.nav-tabs {
   border: none;
-  column-gap: 25px;
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+  .nav.nav-tabs .nav-item button {
+    text-align: left;
+  }
 
 .nav-link {
   color: inherit !important;
