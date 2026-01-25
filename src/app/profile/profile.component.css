@@ -39,9 +39,7 @@
     height: 90px;
     border-radius: 100%;
     position: relative;
-    /**/
-    background-image: url('../../../public/images/1x1.jpg');
-    background-size: contain;
+    object-fit: contain;
     z-index: -1;
   }
 
