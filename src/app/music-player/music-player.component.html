@@ -1,6 +1,6 @@
 <div class="sidebar" [class.active]="isActive">
 
-  <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled" Spotlight>
+  <button class="r-button side-button" (click)="Toggle()" [disabled]="toggleDisabled">
     <i class="gi filled gi-music toggle"></i>
     <div class="player-title" style="display: flex; gap: 5px">
       <span *ngIf="isPlaying">Now Playing</span>
@@ -82,7 +82,7 @@
         <app-hexagon [itemImg]="track.img" [rotate]="true"></app-hexagon>
       </div>
 
-      <div class="song-info" Spotlight>
+      <div class="song-info">
         <span class="song-title">{{ track.title }}</span>
         <i class="song-artist faded">{{ track.artist }}</i>
       </div>

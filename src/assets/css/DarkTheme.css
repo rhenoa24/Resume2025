@@ -13,19 +13,11 @@ body, body::after, body::before,
   background-color: #20202A;
 }
 
-.profile-card::after,
-.song-list-UI .song-item.active .song-info::after,
-.r-card::after {
-  content: "";
+.r-card, .song-list-UI .song-item.active .song-info {
   background-color: #2B2B36;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -10;
 }
 
-.side-button, .song-list-UI {
+.profile-card, .side-button, .song-list-UI {
   background-color: #24242F;
 }
 
