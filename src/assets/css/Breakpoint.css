@@ -144,6 +144,11 @@
   .banner .title {
     font-size: 30pt !important;
   }
+
+  .theme-button {
+      flex-grow: 0 !important;
+  }
+
 }
 
 @media (max-width: 690px) {

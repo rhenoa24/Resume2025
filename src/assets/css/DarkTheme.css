@@ -29,6 +29,16 @@ body, body::after, body::before,
   background-color: #FF8F99 !important
 }
 
+.dropdown-menu {
+  position: relative;
+  --bs-dropdown-bg: transparent;
+  --bs-dropdown-link-active-bg: #FF8F99;
+  --bs-dropdown-link-hover-bg: #abc5ff17;
+  --bs-dropdown-link-hover-color: inherit;
+  --bs-dropdown-color: inherit;
+  --bs-dropdown-link-color: inherit;
+}
+
 .highlight-border {
   border-color: #FF8F99
 }

@@ -7,8 +7,20 @@
   top: 15px;
   z-index: 10;
   align-items: center;
-  backdrop-filter: blur(40px);
 }
+
+  .nav-menu::before {
+    content: '';
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    /**/
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
 
   .nav-menu a {
     cursor: default;
@@ -38,4 +50,39 @@
 
   .nav-menu:hover .r-floating-div {
     opacity: 10%;
+  }
+
+.theme-button {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+  .theme-button button {
+    color: inherit;
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 10px;
+  }
+
+.dropdown-menu {
+
+}
+
+  .dropdown-menu a {
+    opacity: 1 !important;
+  }
+
+  .dropdown-menu::before {
+    content: '';
+    background-color: #ffffff05;
+    backdrop-filter: blur(40px);
+    /**/
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
   }
