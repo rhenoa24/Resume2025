@@ -151,4 +151,8 @@
     height: 172px;
     justify-content: flex-start !important;
   }
+
+  .r-floating-div-container {
+      display: none !important;
+  }
 }
