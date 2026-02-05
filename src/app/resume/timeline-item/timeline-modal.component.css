@@ -33,20 +33,23 @@
 }
 
 .modal-body {
-  padding-bottom: 0;
-  display: flex;
-  gap: 20px;
+  padding: 0;
   height: 365px;
+  overflow: auto;
 }
 
-.tab-content {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-  padding-right: 10px;
-  width: 100%;
-}
+  .modal-body .content {
+    padding: 0 12px
+  }
+
+  .tab-content {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-right: 10px;
+    width: 100%;
+  }
 
 .gallery {
   margin-bottom: 1rem;
