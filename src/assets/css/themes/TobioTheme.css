@@ -65,6 +65,26 @@ body.tobio-theme::before,
 }
 
 /*================================================================*/
+
+.tobio-theme .banner {
+  color: white;
+}
+
+  .tobio-theme .banner .highlight {
+    /*color: #fd3c3a !important;*/
+  }
+
+  .tobio-theme .banner .background-image {
+    background-image: url('../../../../public/images/banner-photo-tobio.jpg');
+  }
+
+.tobio-theme .fade-gradient {
+  --bg-top: #413737;
+  --bg-bottom: #0089ff;
+  mix-blend-mode: overlay !important;
+}
+
+/*================================================================*/
 .tobio-theme .nav-menu a:not(.active),
 .tobio-theme .item-title .subtitle {
   opacity: 0.7 !important;
@@ -73,10 +93,7 @@ body.tobio-theme::before,
 .tobio-theme .modal-content {
 }
 
-.tobio-theme .fade-gradient {
-/*  --bg-top: #d3ff8c;
-  --bg-bottom: #d3ff8c2b;*/
-}
+
 
 .tobio-theme .item-img::after {
   --bg-top: #0f2c54;

@@ -68,6 +68,27 @@ body.kenma-theme::before,
 }
 
 /*================================================================*/
+
+.kenma-theme .banner {
+  color: white;
+}
+
+  .kenma-theme .banner .highlight {
+    /*color: #fd3c3a !important;*/
+  }
+
+  .kenma-theme .banner .background-image {
+    background-image: url('../../../../public/images/banner-photo-kenma.jpg');
+  }
+
+.kenma-theme .fade-gradient {
+  --bg-top: #121212;
+  --bg-bottom: #00000000;
+  mix-blend-mode: multiply !important;
+}
+
+
+/*================================================================*/
 .kenma-theme .nav-menu a:not(.active),
 .kenma-theme .item-title .subtitle {
   opacity: 0.7 !important;

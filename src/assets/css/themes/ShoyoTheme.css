@@ -78,6 +78,27 @@ body.shoyo-theme::before {
 }
 
 /*================================================================*/
+
+.shoyo-theme .banner {
+  color: white;
+}
+
+  .shoyo-theme .banner .highlight {
+    /*color: #fd3c3a !important;*/
+  }
+
+  .shoyo-theme .banner .background-image {
+    background-image: url('../../../../public/images/banner-photo-shoyo.jpg');
+  }
+
+.shoyo-theme .fade-gradient {
+  --bg-top: #006bff;
+  --bg-bottom: transparent;
+  /*mix-blend-mode: normal !important;*/
+}
+
+
+/*================================================================*/
 .shoyo-theme .nav-menu a:not(.active),
 .shoyo-theme .item-title .subtitle {
   opacity: 0.7 !important;

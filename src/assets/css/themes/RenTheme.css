@@ -72,6 +72,26 @@ body.ren-theme::before {
 }
 
 /*================================================================*/
+
+.ren-theme .banner {
+  color: white;
+}
+
+  .ren-theme .banner .highlight {
+    color: #fd3c3a !important;
+  }
+
+  .ren-theme .banner .background-image {
+    background-image: url('../../../../public/images/banner-photo-ren.jpg');
+  }
+
+.ren-theme .fade-gradient {
+  --bg-top: #4e2d00;
+  --bg-bottom: transparent;
+  mix-blend-mode: multiply !important;
+}
+
+/*================================================================*/
 .ren-theme .nav-menu a:not(.active),
 .ren-theme .item-title .subtitle {
   opacity: 0.7 !important;
@@ -79,11 +99,6 @@ body.ren-theme::before {
 
 .ren-theme .modal-content {
   background: linear-gradient(180deg, #fff7e7, #ffffffa6, #ffffffb3) !important
-}
-
-.ren-theme .fade-gradient {
-  --bg-top: #d3ff8c;
-  --bg-bottom: #d3ff8c2b;
 }
 
 .ren-theme .item-img::after {
