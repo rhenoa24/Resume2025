@@ -8,7 +8,6 @@
 
 .profile-card,
 .side-button,
-.song-list-UI,
 .r-card,
 .song-list-UI .song-item.active .song-info,
 .page-container,
@@ -25,6 +24,10 @@ body::before,
   transition: 0.4s ease-in-out, 0s height, background-color 0.4s ease;
 }
 
+  .sidebar.active .bg-transition {
+    transition: background-color 0.4s ease !important;
+  }
+
 /*.highlight,
 .highlight-border,
 input[type="range"] {
@@ -35,6 +38,11 @@ input[type="range"] {
   transition: 0.4s ease;
 }*/
 
-/*.music-player-UI, .song-list-UI {
-  transition: background-color 0.4s ease;
-}*/
+.music-player-UI, .song-list-UI {
+  transition: opacity 0.15s ease-in-out, background-color 0.4s ease;
+}
+
+.sidebar.active .player-title,
+.sidebar.active .music-player-UI, .sidebar.active .song-list-UI {
+  transition: opacity 0.4s ease-in-out 0.3s, background-color 0.4s ease;
+}

@@ -29,10 +29,13 @@ body.light-theme::before,
 }
 
 .light-theme .profile-card,
-.light-theme .side-button,
-.light-theme .song-list-UI {
+.light-theme .side-button {
   background-color: white;
   /*background-color: #f5f5f5;*/
+}
+
+.light-theme .song-list-UI {
+  background-color: white !important;
 }
 
 .light-theme .highlight {

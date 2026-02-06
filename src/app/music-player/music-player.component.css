@@ -43,7 +43,6 @@
   opacity: 0;
   pointer-events: none;
   user-select: none;
-  transition: opacity 0.15s ease-in-out;
   z-index: 1;
 }
 
@@ -226,7 +225,6 @@
   .sidebar.active .player-title,
   .sidebar.active .music-player-UI, .sidebar.active .song-list-UI {
     opacity: 1;
-    transition: opacity 0.4s ease-in-out 0.3s;
     pointer-events: all;
     user-select: initial;
   }
@@ -234,4 +232,3 @@
 .gi::before {
   font-size: 24px;
 }
-
