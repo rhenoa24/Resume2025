@@ -5,7 +5,7 @@ body.tobio-theme::before,
 .tobio-theme .time-line,
 .tobio-theme .circle {
   background-color: #15183f;
-  color: #fcfaeb;
+  --text-color: white;
   --scrollbar-color: #4a98c9;
   --scrollbar-color-hover: #97c9ea;
 }
@@ -18,7 +18,7 @@ body.tobio-theme::before,
 .tobio-theme .profile-container,
 .tobio-theme .sidebar {
   background-color: #0f2c54;
-  color: white;
+  color: var(--text-color);
 }
 
 .tobio-theme .r-card {
@@ -80,6 +80,5 @@ body.tobio-theme::before,
 }
 
 .tobio-theme .item-img::after {
-  --bg-top: white;
-  --bg-bottom: #5b5b5b00;
+  --bg-top: #0f2c54;
 }

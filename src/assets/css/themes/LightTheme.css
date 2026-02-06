@@ -80,5 +80,4 @@ body.light-theme::before,
 
 .light-theme .item-img::after {
   --bg-top: white;
-  --bg-bottom: #5b5b5b00;
 }

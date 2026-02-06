@@ -2,7 +2,7 @@ body.shoyo-theme,
 body.shoyo-theme::after,
 body.shoyo-theme::before {
   background-color: #e9c483;
-  color: #502500;
+  --text-color: #502500;
   --scrollbar-color: #9b9f24;
   --scrollbar-color-hover: #b6bb25;
 }
@@ -30,7 +30,7 @@ body.shoyo-theme::before {
 
 .shoyo-theme .song-list-UI .song-item.active .song-info {
   background-color: #ffd600;
-  color: #502500;
+  color: var(--text-color);
 }
 
 .shoyo-theme .profile-card,
@@ -87,6 +87,14 @@ body.shoyo-theme::before {
 }
 
 .shoyo-theme .item-img::after {
-  --bg-top: white;
-  --bg-bottom: #5b5b5b00;
+  --bg-top: #6b6d28;
+}
+
+@media (max-width: 1320px) {
+  .shoyo-theme .profile-container:not(.active) .side-button,
+  .shoyo-theme .profile-container:not(.active),
+  .shoyo-theme .sidebar:not(.active) .side-button,
+  .shoyo-theme .sidebar:not(.active) {
+    color: var(--text-color);
+  }
 }

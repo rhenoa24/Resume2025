@@ -3,8 +3,8 @@ body.kenma-theme::after,
 body.kenma-theme::before,
 .kenma-theme .time-line,
 .kenma-theme .circle {
+  --text-color: #fcfaeb;
   background-color: #1b1716;
-  color: #fcfaeb;
   --scrollbar-color: #353535;
   --scrollbar-color-hover: #494949;
 }
@@ -83,6 +83,5 @@ body.kenma-theme::before,
 }
 
 .kenma-theme .item-img::after {
-  --bg-top: white;
-  --bg-bottom: #5b5b5b00;
+  --bg-top: black;
 }

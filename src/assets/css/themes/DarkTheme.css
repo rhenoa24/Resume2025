@@ -1,7 +1,8 @@
 body, body::after, body::before,
 .tag, .time-line, .circle {
   background-color: #191923;
-  color: white;
+  --text-color: white;
+  color: var(--text-color);
 }
 
 .page-container {
@@ -68,6 +69,6 @@ input[type="range"] {
 
 .item-img::after {
   --bg-top: #20202a;
-  --bg-bottom: #5b5b5b00;
+  --bg-bottom: transparent;
   background-image: linear-gradient(0deg, var(--bg-top), var(--bg-bottom));
 }
