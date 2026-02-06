@@ -35,6 +35,6 @@ input[type="range"] {
   transition: 0.4s ease;
 }*/
 
-.music-player-UI::before, .song-list-UI::before {
+/*.music-player-UI, .song-list-UI {
   transition: background-color 0.4s ease;
-}
+}*/

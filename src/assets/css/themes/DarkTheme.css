@@ -58,7 +58,7 @@ input[type="range"] {
 }
 
 .banner .background-image {
-  background-image: url('/images/banner-photo.jpg');
+  background-image: url('../../../../public/images/banner-photo.jpg');
 }
 
 .r-modal-backdrop {
