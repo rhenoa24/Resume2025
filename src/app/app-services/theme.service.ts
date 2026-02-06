@@ -8,15 +8,11 @@ export class ThemeService {
   private readonly defaultTheme = 'dark';
 
   getTheme(): string {
-    const theme = localStorage.getItem(this.storageKey);
-    return theme ? theme : this.defaultTheme;
+    const storedTheme = localStorage.getItem(this.storageKey);
+    return storedTheme ? storedTheme : this.defaultTheme;
   }
 
   setTheme(theme: string): void {
     localStorage.setItem(this.storageKey, theme);
-  }
-
-  clearTheme(): void {
-    localStorage.removeItem(this.storageKey);
   }
 }

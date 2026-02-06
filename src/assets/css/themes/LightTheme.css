@@ -1,0 +1,60 @@
+body.light-theme,
+body.light-theme::after,
+body.light-theme::before,
+.light-theme .tag,
+.light-theme .time-line,
+.light-theme .circle {
+  background-color: #eaeaea;
+  color: #363636;
+}
+
+
+.light-theme .page-container {
+  background-color: #f5f5f5
+}
+
+.light-theme .profile-container,
+.light-theme .sidebar {
+  background-color: white;
+}
+
+.light-theme .r-card,
+.light-theme .song-list-UI .song-item.active .song-info {
+  background-color: white;
+}
+
+.light-theme .profile-card,
+.light-theme .side-button,
+.light-theme .song-list-UI {
+  background-color: #f5f5f5;
+}
+
+.light-theme .highlight {
+  color: #9F2936 !important
+}
+
+.light-theme .highlight-color {
+  background-color: #9F2936 !important
+}
+
+.light-theme .highlight-border {
+  border-color: #9F2936
+}
+
+.light-theme input[type="range"] {
+  accent-color: #9F2936
+}
+
+/*================================================================*/
+.light-theme .item-title .subtitle {
+  opacity: 0.7 !important;
+}
+
+.light-theme .modal-content {
+  background: linear-gradient(180deg, white, #ffffffa6, #ffffffb3) !important
+}
+
+.light-theme .fade-gradient {
+  --bg-top: #d3ff8c;
+  --bg-bottom: #d3ff8c2b;
+}

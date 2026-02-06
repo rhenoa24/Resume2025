@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
 import { ThemeService } from './app-services/theme.service';
 
+interface ThemeOption {
+  key: string;
+  label: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -8,39 +12,20 @@ import { ThemeService } from './app-services/theme.service';
   standalone: false,
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'Resume2025';
 
-  themes: string[] = [
-    'dark',
-    'light',
-    'ren',
-    'tobio',
-    'shoyo',
-    'kenma',
-  ];
+  private themeService = inject(ThemeService);
 
-  selectedTheme: string = 'dark';
-
-  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
-    this.selectedTheme = this.themeService.getTheme();
-    this.applyTheme(this.selectedTheme);
-  }
-
-  onThemeChange(theme: string): void {
-    this.selectedTheme = theme;
-    this.applyTheme(theme);
-  }
-
-  private applyTheme(theme: string): void {
-    this.themes.forEach(t => {
-      document.body.classList.remove(`${t}-theme`);
-    });
-
+    const theme = this.themeService.getTheme();
     document.body.classList.add(`${theme}-theme`);
-    this.themeService.setTheme(theme);
   }
 
+  ngAfterViewInit(): void {
+    window.setTimeout(() => {
+      document.body.classList.remove('no-transition');
+    }, 500);
+  }
 }

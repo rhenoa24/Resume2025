@@ -17,9 +17,19 @@ body, body::after, body::before,
   background-color: #2B2B36;
 }
 
-.profile-card, .side-button, .song-list-UI {
+.profile-card, .side-button {
   background-color: #24242F;
 }
+
+.song-list-UI-bg {
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #24242F;
+  z-index: -10;
+}
+
 
 .highlight {
   color: #FF8F99 !important
@@ -48,9 +58,15 @@ input[type="range"] {
 }
 
 .banner .background-image {
-  background-image: url('../../../public/images/banner-photo.jpg');
+  background-image: url('/images/banner-photo.jpg');
 }
 
 .r-modal-backdrop {
   background-color: #00000085;
+}
+
+.fade-gradient {
+  --bg-top: #2C2C2C;
+  --bg-bottom: #5b5b5b00;
+  background-image: linear-gradient(0deg, var(--bg-top), var(--bg-bottom));
 }

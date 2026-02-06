@@ -45,8 +45,10 @@
               "src/assets/css/Modal.css",
               "src/assets/css/Spotlight.css",
               "src/assets/css/MaterialIcons.css",
+              "src/assets/css/Transitions.css",
 
-              "src/assets/css/DarkTheme.css"
+              "src/assets/css/themes/DarkTheme.css",
+              "src/assets/css/themes/LightTheme.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

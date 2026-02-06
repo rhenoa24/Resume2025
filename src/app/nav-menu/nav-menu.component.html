@@ -10,23 +10,35 @@
   <a [class.active]="currentScroll === 'contact'"
      (click)="scrollTo('contact')">CONTACT</a>-->
 
-  <!--<div class="theme-button">
+  <div class="theme-button">
     <div class="dropdown">
       <button class="dropdown-toggle"
-              data-bs-toggle="dropdown" aria-expanded="false">
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
         THEME
       </button>
 
       <ul class="dropdown-menu dropdown-menu-end">
-        <li><a class="dropdown-item" href="#">Dark Theme</a></li>
-        <li><a class="dropdown-item" href="#">Light Theme</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Ren's Theme</a></li>
-        <li><a class="dropdown-item" href="#">Tobio's Theme</a></li>
-        <li><a class="dropdown-item" href="#">Shoyo's Theme</a></li>
-        <li><a class="dropdown-item" href="#">Kenma's Theme</a></li>
+
+        <li *ngFor="let item of themes">
+
+          <!-- Divider -->
+          <hr *ngIf="item.type === 'divider'" class="dropdown-divider">
+
+          <!-- Theme item -->
+          <a *ngIf="item.type === 'theme'"
+             class="dropdown-item"
+             href="#"
+             [class.active]="item.key === selectedTheme"
+             (click)="onThemeSelect(item.key); $event.preventDefault()">
+            {{ item.label }}
+          </a>
+
+        </li>
+
       </ul>
     </div>
-  </div>-->
+  </div>
+
 
 </div>
