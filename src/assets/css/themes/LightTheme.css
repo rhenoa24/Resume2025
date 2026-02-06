@@ -6,6 +6,8 @@ body.light-theme::before,
 .light-theme .circle {
   background-color: #eaeaea;
   color: #363636;
+  --scrollbar-color: #dbdbdb;
+  --scrollbar-color-hover: #cdcdcd;
 }
 
 
@@ -18,15 +20,19 @@ body.light-theme::before,
   background-color: white;
 }
 
-.light-theme .r-card,
-.light-theme .song-list-UI .song-item.active .song-info {
+.light-theme .r-card {
   background-color: white;
+}
+
+.light-theme .song-list-UI .song-item.active .song-info {
+  background-color: #f5f5f5;
 }
 
 .light-theme .profile-card,
 .light-theme .side-button,
 .light-theme .song-list-UI {
-  background-color: #f5f5f5;
+  background-color: white;
+  /*background-color: #f5f5f5;*/
 }
 
 .light-theme .highlight {
@@ -45,7 +51,17 @@ body.light-theme::before,
   accent-color: #9F2936
 }
 
+.light-theme .music-bars span {
+  background: #9F2936 !important
+}
+
+.light-theme .dropdown-menu {
+  --bs-dropdown-link-active-bg: #9F2936;
+  --bs-dropdown-link-hover-bg: #eaeaea;
+}
+
 /*================================================================*/
+.light-theme .nav-menu a:not(.active),
 .light-theme .item-title .subtitle {
   opacity: 0.7 !important;
 }
@@ -57,4 +73,9 @@ body.light-theme::before,
 .light-theme .fade-gradient {
   --bg-top: #d3ff8c;
   --bg-bottom: #d3ff8c2b;
+}
+
+.light-theme .item-img::after {
+  --bg-top: white;
+  --bg-bottom: #5b5b5b00;
 }

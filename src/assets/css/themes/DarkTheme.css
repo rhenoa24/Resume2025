@@ -21,13 +21,13 @@ body, body::after, body::before,
   background-color: #24242F;
 }
 
-.song-list-UI-bg {
-  inset: 0;
+.song-list-UI {
+  /*inset: 0;
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -10;*/
   background-color: #24242F;
-  z-index: -10;
 }
 
 
@@ -67,6 +67,12 @@ input[type="range"] {
 
 .fade-gradient {
   --bg-top: #2C2C2C;
+  --bg-bottom: #5b5b5b00;
+  background-image: linear-gradient(0deg, var(--bg-top), var(--bg-bottom));
+}
+
+.item-img::after {
+  --bg-top: #20202a;
   --bg-bottom: #5b5b5b00;
   background-image: linear-gradient(0deg, var(--bg-top), var(--bg-bottom));
 }
