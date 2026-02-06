@@ -1,0 +1,92 @@
+body.shoyo-theme,
+body.shoyo-theme::after,
+body.shoyo-theme::before {
+  background-color: #e9c483;
+  color: #502500;
+  --scrollbar-color: #9b9f24;
+  --scrollbar-color-hover: #b6bb25;
+}
+
+.shoyo-theme .time-line,
+.shoyo-theme .circle,
+.shoyo-theme .tag {
+  background-color: #f06e00
+}
+
+
+.shoyo-theme .page-container {
+  background-color: #e8850a
+}
+
+.shoyo-theme .profile-container,
+.shoyo-theme .sidebar {
+  background-color: #6b6d28;
+  color: white;
+}
+
+.shoyo-theme .r-card {
+  background-color: #f5970e;
+}
+
+.shoyo-theme .song-list-UI .song-item.active .song-info {
+  background-color: #ffd600;
+  color: #502500;
+}
+
+.shoyo-theme .profile-card,
+.shoyo-theme .side-button {
+  background-color: #f06e00;
+}
+
+.shoyo-theme .song-list-UI {
+  background-color: #545613 !important;
+}
+
+.shoyo-theme .highlight {
+  color: #ffd600 !important
+}
+
+.shoyo-theme .highlight-color {
+  background-color: #ffd600 !important
+}
+
+.shoyo-theme .highlight-border {
+  border-color: #ffd600
+}
+
+.shoyo-theme input[type="range"] {
+  accent-color: #ffd600
+}
+
+.shoyo-theme .music-bars span {
+  background: #ffd600 !important
+}
+
+.shoyo-theme .dropdown-menu {
+  --bs-dropdown-link-active-bg: #f06e00;
+  --bs-dropdown-link-hover-bg: #f5970e;
+}
+
+.shoyo-theme .banner {
+    color: white;
+}
+
+/*================================================================*/
+.shoyo-theme .nav-menu a:not(.active),
+.shoyo-theme .item-title .subtitle {
+  opacity: 0.7 !important;
+}
+
+.shoyo-theme .modal-content {
+  background: linear-gradient(180deg, white, #ffffffa6, #ffffffb3) !important
+}
+
+.shoyo-theme .fade-gradient {
+  /*  --bg-top: #d3ff8c;
+  --bg-bottom: #d3ff8c2b;*/
+}
+
+.shoyo-theme .item-img::after {
+  --bg-top: white;
+  --bg-bottom: #5b5b5b00;
+}

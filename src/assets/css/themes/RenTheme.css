@@ -2,7 +2,7 @@ body.ren-theme,
 body.ren-theme::after,
 body.ren-theme::before {
   /*background-color: #eedabf;*/
-  background-color: #462a26;
+  background-color: #4d201a;
   color: #5a231a;
   --scrollbar-color: #ab3130;
   --scrollbar-color-hover: #c73433;
