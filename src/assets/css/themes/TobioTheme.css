@@ -76,6 +76,7 @@ body.tobio-theme::before,
 
   .tobio-theme .banner .background-image {
     background-image: url('../../../../public/images/banner-photo-tobio.jpg');
+    background-color: #4a98c9;
   }
 
 .tobio-theme .fade-gradient {

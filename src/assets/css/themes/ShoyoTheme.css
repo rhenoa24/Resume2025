@@ -89,6 +89,7 @@ body.shoyo-theme::before {
 
   .shoyo-theme .banner .background-image {
     background-image: url('../../../../public/images/banner-photo-shoyo.jpg');
+    background-color: #1eb0db;
   }
 
 .shoyo-theme .fade-gradient {

@@ -83,6 +83,7 @@ body.ren-theme::before {
 
   .ren-theme .banner .background-image {
     background-image: url('../../../../public/images/banner-photo-ren.jpg');
+    background-color: #ab3130;
   }
 
 .ren-theme .fade-gradient {

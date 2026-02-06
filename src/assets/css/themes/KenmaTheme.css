@@ -79,6 +79,7 @@ body.kenma-theme::before,
 
   .kenma-theme .banner .background-image {
     background-image: url('../../../../public/images/banner-photo-kenma.jpg');
+    background-color: black;
   }
 
 .kenma-theme .fade-gradient {

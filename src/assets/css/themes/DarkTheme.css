@@ -55,6 +55,7 @@ input[type="range"] {
 
 .banner .background-image {
   background-image: url('../../../../public/images/banner-photo.jpg');
+  background-color: #99b069;
 }
 
 .r-modal-backdrop {
