@@ -1,0 +1,85 @@
+body.tobio-theme,
+body.tobio-theme::after,
+body.tobio-theme::before,
+.tobio-theme .tag,
+.tobio-theme .time-line,
+.tobio-theme .circle {
+  background-color: #15183f;
+  color: #fcfaeb;
+  --scrollbar-color: #4a98c9;
+  --scrollbar-color-hover: #97c9ea;
+}
+
+
+.tobio-theme .page-container {
+  background-color: #0f2c54
+}
+
+.tobio-theme .profile-container,
+.tobio-theme .sidebar {
+  background-color: #0f2c54;
+  color: white;
+}
+
+.tobio-theme .r-card {
+  background-color: #173e6e;
+}
+
+.tobio-theme .song-list-UI .song-item.active .song-info {
+  background-color: #0f2c54;
+}
+
+.tobio-theme .profile-card,
+.tobio-theme .side-button {
+  background-color: #173e6e;
+  color: white;
+}
+
+.tobio-theme .song-list-UI {
+  background-color: #173e6e !important;
+}
+
+.tobio-theme .highlight {
+  color: #dda155 !important
+}
+
+.tobio-theme .highlight-color {
+  background-color: #dda155 !important
+}
+
+.tobio-theme .highlight-border {
+  border-color: #dda155
+}
+
+.tobio-theme input[type="range"] {
+  accent-color: #dda155
+}
+
+.tobio-theme .music-bars span {
+  background: #dda155 !important
+}
+
+.tobio-theme .dropdown-menu {
+  --bs-dropdown-link-active-bg: #4a98c9;
+  /*--bs-dropdown-link-hover-bg: #eaeaea;*/
+}
+
+/*================================================================*/
+.tobio-theme .nav-menu a:not(.active),
+.tobio-theme .item-title .subtitle {
+  opacity: 0.7 !important;
+}
+
+.tobio-theme .modal-content {
+  background: linear-gradient(180deg, white, #ffffffa6, #ffffffb3) !important
+}
+
+.tobio-theme .fade-gradient {
+/*  --bg-top: #d3ff8c;
+  --bg-bottom: #d3ff8c2b;*/
+}
+
+.tobio-theme .item-img::after {
+  --bg-top: white;
+  --bg-bottom: #5b5b5b00;
+}

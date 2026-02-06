@@ -1,18 +1,25 @@
 body.ren-theme,
 body.ren-theme::after,
-body.ren-theme::before,
-.ren-theme .tag,
-.ren-theme .time-line,
-.ren-theme .circle {
-  background-color: #eedabf;
+body.ren-theme::before {
+  /*background-color: #eedabf;*/
+  background-color: #462a26;
   color: #5a231a;
   --scrollbar-color: #ab3130;
   --scrollbar-color-hover: #c73433;
 }
 
+.ren-theme .tag {
+  background-color: #eedabf;
+  color: inherit;
+}
+
+.ren-theme .time-line,
+.ren-theme .circle {
+  background-color: #d7c0a2
+}
 
 .ren-theme .page-container {
-  background-color: #fff7e7
+  background-color: #eedabf
 }
 
 .ren-theme .profile-container,
@@ -22,11 +29,11 @@ body.ren-theme::before,
 }
 
 .ren-theme .r-card {
-  background-color: white;
+  background-color: #fff7e7;
 }
 
 .ren-theme .song-list-UI .song-item.active .song-info {
-  background-color: #f5f5f5;
+  background-color: #68191f;
 }
 
 .ren-theme .profile-card,
@@ -36,7 +43,7 @@ body.ren-theme::before,
 }
 
 .ren-theme .song-list-UI {
-  background-color: white !important;
+  background-color: #ab3130 !important;
 }
 
 .ren-theme .highlight {
@@ -48,7 +55,7 @@ body.ren-theme::before,
 }
 
 .ren-theme .highlight-border {
-  border-color: #dda155
+  border-color: #ab3130
 }
 
 .ren-theme input[type="range"] {
@@ -60,8 +67,8 @@ body.ren-theme::before,
 }
 
 .ren-theme .dropdown-menu {
-  --bs-dropdown-link-active-bg: #9F2936;
-  --bs-dropdown-link-hover-bg: #eaeaea;
+  --bs-dropdown-link-active-bg: #ab3130;
+  --bs-dropdown-link-hover-bg: #d7c0a2;
 }
 
 /*================================================================*/
