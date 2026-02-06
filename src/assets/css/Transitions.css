@@ -28,16 +28,6 @@ body::before,
     transition: background-color 0.4s ease !important;
   }
 
-/*.highlight,
-.highlight-border,
-input[type="range"] {
-  transition: 0.4s ease
-}*/
-
-/*.fade-gradient {
-  transition: 0.4s ease;
-}*/
-
 .music-player-UI, .song-list-UI {
   transition: opacity 0.15s ease-in-out, background-color 0.4s ease;
 }

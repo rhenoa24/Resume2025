@@ -39,12 +39,12 @@ export class NavMenuComponent implements OnInit {
     { type: 'theme', key: 'dark', label: 'Dark Theme' },
     { type: 'theme', key: 'light', label: 'Light Theme' },
 
-    //{ type: 'divider' },
+    { type: 'divider' },
 
-    //{ type: 'theme', key: 'ren', label: "Ren's Theme" },
-    //{ type: 'theme', key: 'tobio', label: "Tobio's Theme" },
-    //{ type: 'theme', key: 'shoyo', label: "Shoyo's Theme" },
-    //{ type: 'theme', key: 'kenma', label: "Kenma's Theme" }
+    { type: 'theme', key: 'ren', label: "Ren's Theme" },
+    { type: 'theme', key: 'tobio', label: "Tobio's Theme" },
+    { type: 'theme', key: 'shoyo', label: "Shoyo's Theme" },
+    { type: 'theme', key: 'kenma', label: "Kenma's Theme" }
   ];
 
 

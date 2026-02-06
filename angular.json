@@ -48,7 +48,11 @@
               "src/assets/css/Transitions.css",
 
               "src/assets/css/themes/DarkTheme.css",
-              "src/assets/css/themes/LightTheme.css"
+              "src/assets/css/themes/LightTheme.css",
+              "src/assets/css/themes/RenTheme.css",
+              "src/assets/css/themes/TobioTheme.css",
+              "src/assets/css/themes/ShoyoTheme.css",
+              "src/assets/css/themes/KenmaTheme.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
