@@ -18,18 +18,18 @@ body::before,
 .tag,
 .time-line,
 .circle {
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .profile-container, .sidebar {
-  transition: 0.4s ease-in-out, 0s height, background-color 0.4s ease, color 0.4s ease;
+  transition: 0.4s ease-in-out, 0s height, background-color 0.4s ease;
 }
 
-.highlight,
+/*.highlight,
 .highlight-border,
 input[type="range"] {
   transition: 0.4s ease
-}
+}*/
 
 /*.fade-gradient {
   transition: 0.4s ease;
