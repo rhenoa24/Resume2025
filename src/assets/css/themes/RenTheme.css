@@ -78,7 +78,7 @@ body.ren-theme::before {
 }
 
 .ren-theme .modal-content {
-  background: linear-gradient(180deg, white, #ffffffa6, #ffffffb3) !important
+  background: linear-gradient(180deg, #fff7e7, #ffffffa6, #ffffffb3) !important
 }
 
 .ren-theme .fade-gradient {

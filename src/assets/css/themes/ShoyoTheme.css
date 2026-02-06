@@ -2,7 +2,8 @@ body.shoyo-theme,
 body.shoyo-theme::after,
 body.shoyo-theme::before {
   background-color: #e9c483;
-  --text-color: #502500;
+  --text-color: white;
+  --dark-text-color: #502500;
   --scrollbar-color: #9b9f24;
   --scrollbar-color-hover: #b6bb25;
 }
@@ -25,7 +26,8 @@ body.shoyo-theme::before {
 }
 
 .shoyo-theme .r-card {
-  background-color: #f5970e;
+  background-color: #ffe9cc;
+  color: var(--dark-text-color);
 }
 
 .shoyo-theme .song-list-UI .song-item.active .song-info {
@@ -44,6 +46,10 @@ body.shoyo-theme::before {
 
 .shoyo-theme .highlight {
   color: #ffd600 !important
+}
+
+.shoyo-theme #services .highlight {
+  color: #f06e00 !important
 }
 
 .shoyo-theme .highlight-color {
@@ -68,7 +74,7 @@ body.shoyo-theme::before {
 }
 
 .shoyo-theme .banner {
-    color: white;
+  color: white;
 }
 
 /*================================================================*/
@@ -78,7 +84,8 @@ body.shoyo-theme::before {
 }
 
 .shoyo-theme .modal-content {
-  background: linear-gradient(180deg, white, #ffffffa6, #ffffffb3) !important
+  background: linear-gradient(180deg, #ffe9cc, #ffffffa6, #ffffffb3) !important;
+  color: var(--dark-text-color) !important;
 }
 
 .shoyo-theme .fade-gradient {
