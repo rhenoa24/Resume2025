@@ -14,21 +14,17 @@
 <!-- Portfolio Grid -->
 <div class="r-col-2">
   <div class="portfolio-item r-card"
-       (click)="portfolioClick(item)"
        *ngFor="let item of filteredItems; trackBy: trackByTitle">
 
-    <img [src]="item.src"
-         [alt]="item.title">
+    <div (click)="portfolioClick(item)">
 
-    <div class="overlay r-card">
-      <b>{{ item.title }}</b>
+      <img [src]="item.src"
+           [alt]="item.title">
 
-      @if (item.category === 'motion'){
-      <a [href]="item.description" target="_blank">{{ item.description }}</a>
-      }
-      @else {
-      <span>{{ item.description }}</span>
-      }
+      <div class="overlay r-card">
+        <b>{{ item.title }}</b>
+        <span>{{ item.description }}</span>
+      </div>
 
     </div>
 
@@ -37,7 +33,7 @@
 
 
 
-<div class="modal fade" #portfolioModal
+<div class="modal fade"
      data-bs-backdrop="false"
      id="portfolioModal"
      tabindex="-1"

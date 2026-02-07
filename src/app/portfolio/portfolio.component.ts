@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Modal } from 'bootstrap';
 
 type PortfolioCategory =
@@ -130,6 +130,21 @@ export class PortfolioComponent {
 
   //=========================================================
 
+  selectedItem: PortfolioItem | null = null;
+
+  portfolioClick(item: PortfolioItem): void {
+    if (item.category === 'motion') {
+      window.open(item.description, '_blank');
+      return;
+    }
+    if (item.category === 'web') {
+      window.open(item.link, '_blank');
+      return;
+    }
+
+
+    this.selectedItem = item;
+  }
 
   // ========================================================================================================================
 
