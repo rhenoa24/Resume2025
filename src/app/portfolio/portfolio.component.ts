@@ -106,6 +106,9 @@ export class PortfolioComponent {
       description: 'https://youtube.com/watch?v=pIPOnw-pqz8',
       src: 'portfolio/vid-f.jpg'
     },
+
+    //
+
   ];
 
   setFilter(value: 'all' | PortfolioCategory): void {
@@ -145,6 +148,14 @@ export class PortfolioComponent {
 
     this.selectedItem = item;
   }
+
+  getModalTarget(item: PortfolioItem): string | null {
+    if (item.category === 'motion' || item.category === 'web') {
+      return null;
+    }
+    return '#portfolioModal';
+  }
+
 
   // ========================================================================================================================
 

@@ -14,18 +14,19 @@
 <!-- Portfolio Grid -->
 <div class="r-col-2">
   <div class="portfolio-item r-card"
-       *ngFor="let item of filteredItems; trackBy: trackByTitle">
+       *ngFor="let item of filteredItems; trackBy: trackByTitle"
+       role="button"
+       (click)="portfolioClick(item)"
+       [attr.data-bs-target]="getModalTarget(item)"
+       [attr.data-bs-toggle]="getModalTarget(item) ? 'modal' : null">
 
-    <div (click)="portfolioClick(item)">
 
-      <img [src]="item.src"
-           [alt]="item.title">
+    <img [src]="item.src"
+         [alt]="item.title">
 
-      <div class="overlay r-card">
-        <b>{{ item.title }}</b>
-        <span>{{ item.description }}</span>
-      </div>
-
+    <div class="overlay r-card">
+      <b>{{ item.title }}</b>
+      <span>{{ item.description }}</span>
     </div>
 
   </div>
