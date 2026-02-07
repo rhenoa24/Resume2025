@@ -33,9 +33,9 @@ export class PortfolioComponent {
   filters: PortfolioFilter[] = [
     { label: 'All', value: 'all' },
     { label: 'Web Design', value: 'web' },
-    { label: 'Graphic Design', value: 'graphics' },
+    //{ label: 'Graphic Design', value: 'graphics' },
     { label: 'Motion Graphic', value: 'motion' },
-    { label: 'Illustration', value: 'illustration' }
+    //{ label: 'Illustration', value: 'illustration' }
   ];
 
   items: PortfolioItem[] = [
@@ -110,6 +110,9 @@ export class PortfolioComponent {
 
   setFilter(value: 'all' | PortfolioCategory): void {
     this.filter = value;
+    window.setTimeout(() => {
+      this.scrollTo();
+    })
   }
 
   get filteredItems(): PortfolioItem[] {
@@ -150,6 +153,17 @@ export class PortfolioComponent {
 
     this.modalInstance = new Modal(modalElement);
     this.modalInstance.show();
+  }
+
+  // ========================================================================================================================
+
+  protected scrollTo(id: string = 'portfolio') {
+    //this.currentScroll = id
+
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   }
 
   // ========================================================================================================================

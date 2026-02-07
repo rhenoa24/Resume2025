@@ -1,13 +1,13 @@
-.content {
-  padding: 30px;
-  gap: 30px;
+:host {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .portfolio-filters {
   display: flex;
-  gap: 5px;
+  gap: 10px 5px;
+  flex-wrap: wrap;
 }
 
   .portfolio-filters button {

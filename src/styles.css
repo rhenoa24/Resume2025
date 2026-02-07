@@ -69,6 +69,10 @@ body {
     display: none;
   }
 
+#home, #services, #work-experience, #portfolio, #contact {
+  scroll-margin-top: 110px;
+}
+
 
 span {
   cursor: inherit;

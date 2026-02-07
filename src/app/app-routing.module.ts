@@ -9,11 +9,6 @@ const routes: Routes = [
     component: HomepageComponent,
     title: '@rhenoa24 Resume 2025'
   },
-  {
-    path: 'portfolio',
-    component: PortfolioComponent,
-    title: '@rhenoa24 Resume 2025 | Portfolio'
-  },
 ];
 
 @NgModule({
