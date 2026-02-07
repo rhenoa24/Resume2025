@@ -69,10 +69,6 @@ body {
     display: none;
   }
 
-#home, #services, #resume, #works, #contact {
-  scroll-margin-top: 110px;
-}
-
 
 span {
   cursor: inherit;

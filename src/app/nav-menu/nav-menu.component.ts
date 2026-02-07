@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ThemeService } from '../app-services/theme.service';
+import { Router } from '@angular/router';
 
 interface ThemeItem {
   type: 'theme';
@@ -21,16 +22,37 @@ type ThemeOption = ThemeItem | DividerItem;
   styleUrl: './nav-menu.component.css'
 })
 export class NavMenuComponent implements OnInit {
-  protected currentScroll: string = 'home'
 
-  protected scrollTo(id: string) {
-    this.currentScroll = id
+  protected activeSection: string = 'home';
 
-    document.getElementById(id)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+  //protected scrollTo(id: string) {
+  //  this.currentScroll = id
+
+  //  document.getElementById(id)?.scrollIntoView({
+  //    behavior: 'smooth',
+  //    block: 'start'
+  //  });
+  //}
+
+  private router = inject(Router);
+
+  goToSection(id: string): void {
+    this.activeSection = id;
+    this.router.navigate(['/'], { fragment: id });
   }
+
+  goToRoute(id: string): void {
+    this.activeSection = id;
+
+    if (id === 'home') {
+      // home is the root route
+      this.router.navigate(['/']);
+    } else {
+      // all other routes
+      this.router.navigate(['/', id]);
+    }
+  }
+
 
   //====================================
   private themeService = inject(ThemeService);

@@ -1,13 +1,17 @@
 <div class="nav-menu">
-  <a [class.active]="currentScroll === 'home'"
-     (click)="scrollTo('home')">HOME</a>
-  <a [class.active]="currentScroll === 'services'"
-     (click)="scrollTo('services')">SERVICES</a>
-  <a [class.active]="currentScroll === 'resume'"
-     (click)="scrollTo('resume')">WORK EXPERIENCE</a>
-  <!--<a [class.active]="currentScroll === 'works'"
-     (click)="scrollTo('works')">WORKS</a>
-  <a [class.active]="currentScroll === 'contact'"
+  <a [class.active]="activeSection === 'home'"
+     (click)="goToRoute('home')">HOME</a>
+
+  <a [class.active]="activeSection === 'services'"
+     (click)="goToSection('services')">SERVICES</a>
+
+  <a [class.active]="activeSection === 'work-experience'"
+     (click)="goToSection('work-experience')">WORK EXPERIENCE</a>
+
+  <!--<a [class.active]="activeSection === 'portfolio'"
+     (click)="goToRoute('portfolio')">PORTFOLIO</a>-->
+
+  <!--<a [class.active]="activeSection === 'contact'"
      (click)="scrollTo('contact')">CONTACT</a>-->
 
   <div class="theme-button">
