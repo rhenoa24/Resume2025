@@ -130,30 +130,6 @@ export class PortfolioComponent {
 
   //=========================================================
 
-  selectedItem: PortfolioItem | null = null;
-  private modalInstance?: Modal;
-
-  portfolioClick(item: PortfolioItem): void {
-    if (item.category === 'motion') {
-      window.open(item.description, '_blank');
-      return;
-    }
-    if (item.category === 'web') {
-      window.open(item.link, '_blank');
-      return;
-    }
-
-    this.selectedItem = item;
-    this.openModal();
-  }
-
-  openModal(): void {
-    const modalElement = document.getElementById('portfolioModal');
-    if (!modalElement) return;
-
-    this.modalInstance = new Modal(modalElement);
-    this.modalInstance.show();
-  }
 
   // ========================================================================================================================
 
