@@ -18,7 +18,7 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
   .portfolio-item img,
@@ -66,4 +66,9 @@
 .portfolio-item.r-card {
   padding: 0;
   aspect-ratio: 1920 / 1080;
+}
+
+.modal-body {
+  padding: 0;
+  overflow: auto;
 }

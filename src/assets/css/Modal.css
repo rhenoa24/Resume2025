@@ -211,3 +211,22 @@
 .modal-header button:focus {
   box-shadow: none
 }
+
+.modal-content {
+  background-color: #ffffff05;
+  backdrop-filter: blur(40px);
+  color: inherit;
+}
+
+  .modal-content:hover .r-floating-div {
+    opacity: 10%;
+  }
+
+.r-floating-div {
+  width: 1000px;
+  height: 1000px;
+}
+
+.modal-content .r-floating-div-container {
+  z-index: -10;
+}

@@ -15,6 +15,7 @@
   <!-- Portfolio Grid -->
   <div class="r-col-2">
     <div class="portfolio-item r-card"
+         (click)="portfolioClick(item)"
          *ngFor="let item of filteredItems; trackBy: trackByTitle">
 
       <img [src]="item.src"
@@ -22,10 +23,60 @@
 
       <div class="overlay r-card">
         <b>{{ item.title }}</b>
+
+        @if (item.category === 'motion'){
+        <a [href]="item.description" target="_blank">{{ item.description }}</a>
+        }
+        @else {
         <span>{{ item.description }}</span>
+        }
+
       </div>
 
     </div>
   </div>
 
+</div>
+
+
+<div class="modal fade"
+     data-bs-backdrop="false"
+     id="portfolioModal"
+     tabindex="-1"
+     aria-hidden="true">
+
+  <div class="modal-dialog modal-xl modal-dialog-centered-draggable" isDraggableModal
+       [ngClass]="{'modal-dialog-max': this.isModalMaximized}">
+    <div class="modal-content" Spotlight>
+
+      <div class="modal-header">
+        <h5 class="modal-title">{{ selectedItem?.title }}</h5>
+
+        <div class="ornaments">
+          <button class="bi win-maximize modal-ornament" (click)="MaxModal_Toggle()" *ngIf="this.isModalMaximized === false"></button>
+          <button class="bi win-minimize modal-ornament" (click)="MaxModal_Toggle()" *ngIf="this.isModalMaximized === true"></button>
+
+          <button type="button" class="btn-close modal-ornament" (click)="Reset()" data-bs-dismiss="modal"></button>
+        </div>
+
+      </div>
+
+      <div class="modal-body">
+        <img *ngIf="selectedItem"
+             [src]="selectedItem.src"
+             [alt]="selectedItem.title"
+             class="img-fluid">
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-cancel btn-outline-secondary" (click)="Reset()" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="r-modal-backdrop"></div>
 </div>
