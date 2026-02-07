@@ -67,6 +67,10 @@ body.kenma-theme::before,
   --bs-dropdown-link-hover-bg: #353535;
 }
 
+.kenma-theme .portfolio-filters .tag.highlight-color {
+  color: black;
+}
+
 /*================================================================*/
 
 .kenma-theme .banner {

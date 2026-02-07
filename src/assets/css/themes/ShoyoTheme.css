@@ -32,7 +32,7 @@ body.shoyo-theme::before {
 
 .shoyo-theme .song-list-UI .song-item.active .song-info {
   background-color: #ffd600;
-  color: var(--text-color);
+  color: var(--dark-text-color);
 }
 
 .shoyo-theme .profile-card,
@@ -75,6 +75,10 @@ body.shoyo-theme::before {
 
 .shoyo-theme .banner {
   color: white;
+}
+
+.shoyo-theme .portfolio-filters .tag.highlight-color {
+  color: var(--dark-text-color);
 }
 
 /*================================================================*/

@@ -1,3 +1,29 @@
 <div class="content">
 
+  <div class="page-title">My Works</div>
+
+  <!-- Filter Tabs -->
+  <div class="portfolio-filters">
+    <button class="tag" [class.highlight-color]="filter === 'all'" (click)="setFilter('all')">All</button>
+    <button class="tag" [class.highlight-color]="filter === 'web'" (click)="setFilter('web')">Web Design</button>
+    <button class="tag" [class.highlight-color]="filter === 'motion'" (click)="setFilter('motion')">Motion Graphic</button>
+    <button class="tag" [class.highlight-color]="filter === 'illustration'" (click)="setFilter('illustration')">Illustration</button>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="r-col-2">
+    <div class="portfolio-item r-card" *ngFor="let item of filteredItems">
+      <ng-container [ngSwitch]="item.type">
+        <img *ngSwitchCase="'image'" [src]="item.src" [alt]="item.title">
+        <video *ngSwitchCase="'video'" [src]="item.src" muted loop autoplay></video>
+      </ng-container>
+
+      <div class="overlay r-card">
+        <b>{{ item.title }}</b>
+        <span>{{ item.description }}</span>
+      </div>
+    </div>
+  </div>
+
+
 </div>

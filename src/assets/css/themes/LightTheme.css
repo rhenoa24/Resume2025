@@ -62,8 +62,12 @@ body.light-theme::before,
   --bs-dropdown-link-active-bg: #9F2936;
   --bs-dropdown-link-hover-bg: #eaeaea;
 }
-/*================================================================*/
 
+.light-theme .portfolio-filters .tag.highlight-color {
+  color: white;
+}
+
+/*================================================================*/
 .light-theme .banner {
   /*color: white;*/
 }

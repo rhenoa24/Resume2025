@@ -92,8 +92,12 @@
     .profile-container:not(.active) {
       background-color: transparent !important;
       overflow: hidden !important;
+      pointer-events: none;
     }
 
+    .profile-container .r-button.profile-side-button {
+      pointer-events: all;
+    }
 
   .sidebar {
     position: fixed !important;
@@ -147,9 +151,8 @@
   }
 
   .theme-button {
-      flex-grow: 0 !important;
+    flex-grow: 0 !important;
   }
-
 }
 
 @media (max-width: 690px) {
@@ -159,6 +162,6 @@
   }
 
   .r-floating-div-container {
-      display: none !important;
+    display: none !important;
   }
 }
