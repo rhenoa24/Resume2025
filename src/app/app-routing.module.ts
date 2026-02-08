@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomepageComponent,
-    title: '@rhenoa24 Resume 2025'
+    //title: '@rhenoa24\'s Project 2025'
   },
 ];
 
