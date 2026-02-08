@@ -301,7 +301,7 @@ export class PortfolioComponent {
     },
 
     {
-      title: 'Commission Showcase',
+      title: 'Art Commission Showcase',
       category: 'illustration',
       description: 'A small collection of various commissioned work.',
       src: 'art/illust.png',

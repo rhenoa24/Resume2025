@@ -153,6 +153,25 @@
   .theme-button {
     flex-grow: 0 !important;
   }
+
+  /**/
+
+  .portfolio-item.r-card {
+    aspect-ratio: auto !important;
+  }
+
+    .portfolio-item.r-card .overlay {
+      position: relative !important;
+      transform: none !important;
+    }
+
+    .portfolio-item.r-card img {
+      aspect-ratio: 1920 / 1080;
+    }
+
+    .portfolio-item.r-card:hover img {
+      transform: none !important;
+    }
 }
 
 @media (max-width: 690px) {
