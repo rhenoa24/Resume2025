@@ -12,6 +12,8 @@ interface PortfolioItem {
   category: PortfolioCategory;
   description: string;
   link?: string;
+  gallery?: string[];
+  modalWidth?: string;
   src: string;
 }
 
@@ -33,7 +35,7 @@ export class PortfolioComponent {
   filters: PortfolioFilter[] = [
     { label: 'All', value: 'all' },
     { label: 'Web Design', value: 'web' },
-    //{ label: 'Graphic Design', value: 'graphics' },
+    { label: 'Graphic Design', value: 'graphics' },
     { label: 'Motion Graphic', value: 'motion' },
     //{ label: 'Illustration', value: 'illustration' }
   ];
@@ -109,6 +111,87 @@ export class PortfolioComponent {
 
     //
 
+    {
+      title: 'UTS Official Brochures',
+      category: 'graphics',
+      description: 'Printed brochures given out during events.',
+      src: 'portfolio/brochure-1a.png',
+      gallery: [
+        'portfolio/brochure-1b.png',
+        'portfolio/brochure-2a.png',
+        'portfolio/brochure-2b.png',
+        'portfolio/brochure-3a.png',
+        'portfolio/brochure-3b.png',
+        'portfolio/brochure-4a.png',
+        'portfolio/brochure-4b.png',
+      ],
+      modalWidth: 'modal-lg'
+    },
+
+    {
+      title: 'UTS Official Standees',
+      category: 'graphics',
+      description: 'Printed standees in display during events.',
+      src: 'portfolio/poster-1.png',
+      gallery: [
+        'portfolio/standee-1.png',
+        'portfolio/standee-2.png',
+        'portfolio/standee-3.png',
+        'portfolio/standee-3a.png',
+        'portfolio/standee-3b.png',
+        'portfolio/irl-2.jpg',
+        'portfolio/irl-3.jpg',
+        'portfolio/irl-4.jpg',
+      ],
+      modalWidth: 'modal-m'
+    },
+
+    {
+      title: 'Flake Farmville Graphic Designs',
+      category: 'graphics',
+      description: 'Assorted materials requested by the client.',
+      src: 'portfolio/card.png',
+      gallery: [
+        'portfolio/map.png',
+        'portfolio/map-2.png',
+        'portfolio/farm-1.png',
+        'portfolio/farm-2.png',
+        'portfolio/farm-4.png',
+        'portfolio/farm-5.png',
+        'portfolio/farm-6.png',
+        'portfolio/farm-7.png',
+        'portfolio/farm-8.png',
+      ],
+      modalWidth: 'modal-lg'
+    },
+
+    {
+      title: 'Assorted Logo and Merch made under ME-ICT',
+      category: 'graphics',
+      description: 'Ask and you shall receive... whatever that is.',
+      src: 'portfolio/logo-1.png',
+      gallery: [
+        'portfolio/shirt-1.png',
+        'portfolio/shirt-2.png',
+        'portfolio/irl-5.gif',
+        'portfolio/irl-1.jpeg',
+        'portfolio/logo-2.png',
+        'portfolio/logo-7.png',
+        'portfolio/sign.png',
+        'portfolio/merch-1.png',
+        'portfolio/merch-2.png',
+        'portfolio/merch-3.png',
+        'portfolio/logo-3.png',
+        'portfolio/logo-4.png',
+        'portfolio/logo-5.png',
+        'portfolio/logo-6.png',
+        'portfolio/shirt-3.png',
+        'portfolio/irl-6.jpg',
+      ],
+      modalWidth: 'modal-lg'
+    },
+
+
   ];
 
   setFilter(value: 'all' | PortfolioCategory): void {
@@ -154,6 +237,20 @@ export class PortfolioComponent {
       return null;
     }
     return '#portfolioModal';
+  }
+
+  get modalImages(): string[] {
+    if (!this.selectedItem) {
+      return [];
+    }
+
+    const { category, src, gallery } = this.selectedItem;
+
+    if (gallery?.length) {
+      return [src, ...gallery];
+    }
+
+    return [src];
   }
 
 

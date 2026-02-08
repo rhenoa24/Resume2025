@@ -40,8 +40,8 @@
      tabindex="-1"
      aria-hidden="true">
 
-  <div class="modal-dialog modal-xl modal-dialog-centered-draggable" isDraggableModal
-       [ngClass]="{'modal-dialog-max': this.isModalMaximized}">
+  <div class="modal-dialog modal-dialog-centered-draggable" isDraggableModal
+        [ngClass]="[isModalMaximized ? 'modal-dialog-max' : '' , selectedItem?.modalWidth || '']">
     <div class="modal-content" Spotlight>
 
       <div class="modal-header">
@@ -57,10 +57,14 @@
       </div>
 
       <div class="modal-body">
-        <img *ngIf="selectedItem"
-             [src]="selectedItem.src"
-             [alt]="selectedItem.title"
-             class="img-fluid">
+
+        <div class="gallery-wrapper">
+          <img *ngFor="let image of modalImages; let i = index"
+               [src]="image"
+               [alt]="selectedItem?.title + ' image ' + (i + 1)"
+               class="img-fluid gallery-image">
+        </div>
+
       </div>
 
       <!-- Footer -->
