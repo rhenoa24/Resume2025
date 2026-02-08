@@ -37,7 +37,7 @@ export class PortfolioComponent {
     { label: 'Web Design', value: 'web' },
     { label: 'Graphic Design', value: 'graphics' },
     { label: 'Motion Graphic', value: 'motion' },
-    //{ label: 'Illustration', value: 'illustration' }
+    { label: 'Illustration', value: 'illustration' }
   ];
 
   items: PortfolioItem[] = [
@@ -191,6 +191,122 @@ export class PortfolioComponent {
       modalWidth: 'modal-lg'
     },
 
+    //
+
+    {
+      title: 'DataShield',
+      category: 'web',
+      description: 'My first UI/UX work experience.',
+      src: 'portfolio/dd/banner.png',
+      gallery: [
+        'portfolio/dd/dashboard-new.png',
+        'portfolio/dd/dashboard-new-dark.png',
+        'portfolio/dd/admin-new.png',
+        'portfolio/dd/admin-new-dark.png',
+        'portfolio/dd/map-new.png',
+        'portfolio/dd/map-new-dark.png',
+        'portfolio/dd/login-new.png',
+        'portfolio/dd/login-new-dark.png',
+        'portfolio/dd/deviceInsight-new.png',
+        'portfolio/dd/deviceInsight-new-dark.png',
+        'portfolio/dd/incident-new.png',
+        'portfolio/dd/incident-new-dark.png',
+        'portfolio/dd/riskRegister-new.png',
+        'portfolio/dd/riskRegister-new-dark.png',
+      ],
+      modalWidth: 'modal-xl'
+    },
+
+    {
+      title: 'DataShield Changelog',
+      category: 'graphics',
+      description: 'Dynamic designs based on holidays.',
+      src: 'portfolio/dd/changelog.png',
+      gallery: [
+        'portfolio/dd/xmas.png',
+        'portfolio/dd/newYear.png',
+        'portfolio/dd/valentines.png',
+        'portfolio/dd/mothersDay.png',
+        'portfolio/dd/fathersDay.png',
+        'portfolio/dd/july4.png',
+        'portfolio/dd/thanksgiving.png',
+      ],
+      modalWidth: 'modal-xl'
+    },
+
+    {
+      title: 'DataShield Diagrams',
+      category: 'graphics',
+      description: 'Redesigning oldschool diagrams with a sleek new look.',
+      src: 'portfolio/dd/diagrams.png',
+      gallery: [
+        'portfolio/dd/diagram1.png',
+        'portfolio/dd/diagram2.png',
+        'portfolio/dd/diagram3.png',
+        'portfolio/dd/diagram4.png',
+        'portfolio/dd/diagram6.png',
+      ],
+      modalWidth: 'modal-xl'
+    },
+
+    //
+
+    {
+      title: 'Portfolio Website 2024',
+      category: 'web',
+      link: 'https://rhenoa24.github.io/Resume/',
+      description: 'My first GitHub Page project.',
+      src: 'portfolio/resume-2024.png'
+    },
+
+    {
+      title: 'Rhenoa24\'s Official Website',
+      category: 'web',
+      link: 'https://rhenoa24.carrd.co/',
+      description: 'Used for art commissions and my artist profile back in the day.',
+      src: 'portfolio/carrd.png'
+    },
+
+    {
+      title: 'Recent Personal Works',
+      category: 'illustration',
+      description: 'A bunch of fan art over here.',
+      src: 'art/banner.png',
+      link: 'https://www.pixiv.net/en/users/7158905'
+    },
+
+
+    {
+      title: 'Commissioned VTuber Logos',
+      category: 'illustration',
+      description: 'Designs that show personality.',
+      src: 'art/logo-banner.png',
+      gallery: [
+        'art/logo-a.png',
+        'art/logo-b.png',
+        'art/logo-c.png',
+        'art/logo-d.png',
+        'art/logo-e.png',
+        'art/logo-f.png',
+        'art/logo-g.png',
+        'art/logo-h.png',
+        'art/logo-i.png',
+        'art/logo-j.png',
+        'art/logo-k.png',
+        'art/logo-l.png',
+        'art/logo-m.png',
+        'art/logo-n.png',
+      ],
+      modalWidth: 'modal-lg'
+    },
+
+    {
+      title: 'Commission Showcase',
+      category: 'illustration',
+      description: 'A small collection of various commissioned work.',
+      src: 'art/illust.png',
+      link: 'https://rhenoa24-gallery.carrd.co/#illust'
+    },
 
   ];
 
@@ -223,7 +339,7 @@ export class PortfolioComponent {
       window.open(item.description, '_blank');
       return;
     }
-    if (item.category === 'web') {
+    if (item.link) {
       window.open(item.link, '_blank');
       return;
     }
@@ -233,7 +349,7 @@ export class PortfolioComponent {
   }
 
   getModalTarget(item: PortfolioItem): string | null {
-    if (item.category === 'motion' || item.category === 'web') {
+    if (item.category === 'motion' || item.link) {
       return null;
     }
     return '#portfolioModal';

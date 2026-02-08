@@ -79,3 +79,8 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.modal-dialog-max img {
+  height: calc(100vh - 136px);
+  object-fit: contain;
+}
