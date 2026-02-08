@@ -3,7 +3,7 @@ body.kenma-theme::after,
 body.kenma-theme::before,
 .kenma-theme .time-line,
 .kenma-theme .circle {
-  --text-color: #fcfaeb;
+  --text-color: #ffffff;
   background-color: #1b1716;
   --scrollbar-color: #353535;
   --scrollbar-color-hover: #494949;
