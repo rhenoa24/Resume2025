@@ -24,6 +24,7 @@ export class MusicPlayerComponent {
     { title: 'just friends'                                           , img: 'just-friends.png'                    , file: 'music-player/just-friends.ogg'                    , artist: 'potsu' },
     { title: 'bossa uh'                                               , img: 'bossa-uh.png'                        , file: 'music-player/bossa-uh.ogg'                        , artist: 'potsu' },
     { title: 'in the pool'                                            , img: 'in-the-pool.png'                     , file: 'music-player/in-the-pool.ogg'                     , artist: 'kensuke ushio' },
+    { title: 'City of Tears'                                          , img: 'city-of-tears.png'                   , file: 'music-player/city-of-tears.ogg'                   , artist: 'Christopher Larkin' },
     { title: 'Eternally Yours.'                                       , img: 'eternally-yours.png'                 , file: 'music-player/eternally-yours.ogg'                 , artist: 'YukiV4554' },
     { title: 'your smile is my smile'                                 , img: 'your-smile-is-my-smile.png'          , file: 'music-player/your-smile-is-my-smile.ogg'          , artist: 'YukiV4554' },
     { title: 'You showed me what happiness was and I held it forever.', img: 'You-showed-me-what-happiness-was.png', file: 'music-player/You-showed-me-what-happiness-was.ogg', artist: 'YukiV4554' },
