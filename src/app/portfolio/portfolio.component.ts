@@ -91,6 +91,18 @@ export class PortfolioComponent {
       src: 'portfolio/vid-c.jpg'
     },
     {
+      title: 'A Guide to Access Control List in UTS 2.0',
+      category: 'motion',
+      description: 'https://youtube.com/watch?v=S12a2n5h9BI',
+      src: 'portfolio/vid-g.jpg'
+    },
+    {
+      title: 'Oppr Insights Promo Video',
+      category: 'motion',
+      description: 'https://youtube.com/watch?v=UGT-cRoXZzE',
+      src: 'portfolio/vid-h.jpg'
+    },
+    {
       title: 'Training Center Compliance Management Software',
       category: 'motion',
       description: 'https://youtube.com/watch?v=TQdPooUjRfU',
