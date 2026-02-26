@@ -23,6 +23,7 @@ export class MusicPlayerComponent {
   tracks: Track[] = [
     { title: 'just friends'                                           , img: 'just-friends.png'                    , file: 'music-player/just-friends.ogg'                    , artist: 'potsu' },
     { title: 'bossa uh'                                               , img: 'bossa-uh.png'                        , file: 'music-player/bossa-uh.ogg'                        , artist: 'potsu' },
+    { title: 'have you heard'                                         , img: 'bossa-uh.png'                        , file: 'music-player/have-you-heard.ogg'                  , artist: 'potsu' },
     { title: 'in the pool'                                            , img: 'in-the-pool.png'                     , file: 'music-player/in-the-pool.ogg'                     , artist: 'kensuke ushio' },
     { title: 'City of Tears'                                          , img: 'city-of-tears.png'                   , file: 'music-player/city-of-tears.ogg'                   , artist: 'Christopher Larkin' },
     { title: 'Eternally Yours.'                                       , img: 'eternally-yours.png'                 , file: 'music-player/eternally-yours.ogg'                 , artist: 'YukiV4554' },
