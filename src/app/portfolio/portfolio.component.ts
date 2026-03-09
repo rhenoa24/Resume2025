@@ -141,6 +141,14 @@ export class PortfolioComponent {
     },
 
     {
+      title: 'Asset Management User Manual',
+      category: 'web',
+      link: 'https://me-ict.azurewebsites.net/asset-management-manual',
+      description: 'The official guide and documentation on how to use the UTS 2.0 Asset Management. All documented and coded by me.',
+      src: 'portfolio/manual.png'
+    },
+
+    {
       title: 'UTS Official Standees',
       category: 'graphics',
       description: 'Printed standees in display during events.',
