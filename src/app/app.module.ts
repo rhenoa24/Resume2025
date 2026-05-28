@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DraggableModalDirective } from '../assets/directives/isDraggableModal.directive';
 import { SpotlightDirective } from '../assets/directives/spotlight.directive';
+import { DateRangePipe } from '../assets/pipes/date-range.pipe';
 
 import { TextPressureComponent } from './text-pressure/text-pressure.component';
 
@@ -47,7 +48,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SpotlightDirective,
     DatadefendersComponent,
     ArtistComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    DateRangePipe
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['../timeline-item.component.css', '../timeline-modal.component.css']
 })
 export class ArtistComponent {
+
+  experience = {
+    start: '2020-04-24',
+    end: '2023-04-11'
+  };
+
   // ========================================================================================================================
   //Default dialog size
   protected isModalMaximized: boolean = false;

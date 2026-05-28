@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['../timeline-item.component.css', '../timeline-modal.component.css']
 })
 export class DatadefendersComponent {
+
+  experience = {
+    start: '2023-01-16',
+    end: '2024-09-20'
+  };
+
   // ========================================================================================================================
   //Default dialog size
   protected isModalMaximized: boolean = false;

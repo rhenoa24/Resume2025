@@ -7,6 +7,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['../timeline-item.component.css', '../timeline-modal.component.css']
 })
 export class MEICTComponent {
+
+  experience = {
+    start: '2024-09-23',
+    end: null
+  };
+
   // ========================================================================================================================
   //Default dialog size
   protected isModalMaximized: boolean = false;
