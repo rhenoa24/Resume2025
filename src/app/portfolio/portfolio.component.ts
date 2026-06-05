@@ -42,6 +42,13 @@ export class PortfolioComponent {
 
   items: PortfolioItem[] = [
     {
+      title: 'Hire Manila | UI/UX Design Skills Test',
+      category: 'web',
+      link: 'https://youtu.be/HF_dHOmT88E',
+      description: 'Recreated the “Rise FM - Landing Page” design as accurate as possible.',
+      src: 'portfolio/skill-1.jpg'
+    },
+    {
       title: 'United Training Services External Website',
       category: 'web',
       link: 'https://uts.com.ph/',
