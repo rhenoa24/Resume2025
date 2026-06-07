@@ -51,7 +51,7 @@ export class PortfolioComponent {
     {
       title: 'Remote Recruit | Hiring Take-home Assessment: UX Designer II',
       category: 'web',
-      link: '/portfolio/Alyssa Bautista - Take-Home Assessment_ UX Designer II.pdf',
+      link: 'portfolio/Alyssa Bautista - Take-Home Assessment_ UX Designer II.pdf',
       description: 'Identifying usability issues, top priority, and redesigning.',
       src: 'portfolio/skill-2.png'
     },
