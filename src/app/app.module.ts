@@ -25,6 +25,7 @@ import { MEICTComponent } from './resume/timeline-item/meict/meict.component';
 import { DatadefendersComponent } from './resume/timeline-item/datadefenders/datadefenders.component';
 import { ArtistComponent } from './resume/timeline-item/artist/artist.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HitachiComponent } from './resume/timeline-item/hitachi/hitachi.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     BarsComponent,
     RotatingTextComponent,
     MEICTComponent,
+    HitachiComponent,
     DraggableModalDirective,
     SpotlightDirective,
     DatadefendersComponent,
